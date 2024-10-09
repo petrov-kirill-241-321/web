@@ -1,700 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kropp fitnes</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Планетарий</title>
   </head>
   <body>
+    <!--есть белая  и синяя ссылка как назвать класс чтобы не повтторялось-->
     <header class="header">
-      <a href="/" class="header-logo">
-        <img
-          src="./images/logo.png"
-          alt="Kropp Logo"
-          class="header-logo-image"
-          width="135"
-          height="25"
-          loading="lazy"
-        />
+      <a class="header__link" href="#">
+        <img class="header__image" src="#" alt="logo" /><!---->
       </a>
-      <nav class="header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a href="/" class="header-menu-link is-current">Home</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="/" class="header-menu-link">Pages</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="/" class="header-menu-link">Portfolio</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="/" class="header-menu-link">Blog</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="/" class="header-menu-link">Shop</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <button class="header-book-button button" type="button">
-          Book now
-        </button>
-        <button class="header-burger-button" type="button" title="Open menu">
-          <span class="visually-hidden">Open menu</span>
-          <span class="header-burger-button-line"></span>
-          <span class="header-burger-button-line"></span>
-          <span class="header-burger-button-line"></span>
-        </button>
-      </div>
+      <a class="header__link" href="#">
+        <img class="header__image" src="#" alt="watsap" />
+      </a>
+      <a class="header__link" href="#">
+        <img class="header__image" src="#" alt="telegramm" />
+      </a>
+      <button class="header__button">
+        <img class="menu-image" src="#" alt="menu" />
+      </button>
     </header>
     <main class="content">
-      <h1 class="visually-hidden">Kropp Fitness Club</h1>
       <section class="banner">
-        <h2 class="visually-hidden">Upcoming events</h2>
-        <div class="banner-body">
-          <div class="banner-info">
-            New event<br />
-            coming up / <time datetime="06-07">june 7</time>&nbsp;-&nbsp;<time
-              datetime="06-13"
-              >13</time
-            >
-          </div>
-          <h3 class="banner-title">Crossfit</h3>
-        </div>
-        <div class="banner-pagination">
-          <ul class="banner-pagination-list">
-            <li class="banner-pagination-item">
-              <button class="banner-pagination-button" type="button"></button>
-            </li>
-            <li class="banner-pagination-item">
-              <button class="banner-pagination-button" type="button"></button>
-            </li>
-            <li class="banner-pagination-item">
-              <button
-                class="banner-pagination-button is-current"
-                type="button"
-              ></button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="motivation">
-        <h2 class="visually-hidden">Motivation</h2>
-        <ul class="motivation-list">
-          <li class="motivation-item">
-            <div class="motivation-card container">
-              <div class="motivation-card-body">
-                <h3
-                  class="motivation-card-title backdrop-title title-medium"
-                  data-title="Strong"
-                >
-                  Be you, just stronger! <br />
-                  Power is in you
-                </h3>
-                <div class="motivation-card-description">
-                  <p>
-                    Unum solum justo ex ius. Pro cu probo laboramus eius
-                    insolens euripidis te eos, ut agam tota.
-                  </p>
-                  <a href="" class="motivation-card-button button transparent"
-                    >View more</a
-                  >
-                </div>
-              </div>
-              <img
-                src="./images/motivation/1.jpg.jpg"
-                alt="A man pulling nimself up on a horizontal bar"
-                width="518"
-                height="760"
-                loading="lazy"
-                class="motivation-card-image"
-              />
-            </div>
-          </li>
-          <li class="motivation-item">
-            <div class="motivation-card container">
-              <div class="motivation-card-body">
-                <h3
-                  class="motivation-card-title backdrop-title title-medium"
-                  data-title="Start"
-                >
-                  Today is the best <br />
-                  day to start!
-                </h3>
-                <div class="motivation-card-description">
-                  <p>
-                    Sed abhorreant constituam consectetuer eu. At mei clita
-                    deserunt, his movet molestie nemore.
-                  </p>
-                  <a href="" class="motivation-card-button button transparent"
-                    >View more</a
-                  >
-                </div>
-              </div>
-              <img
-                src="./images/motivation/2.jpg.jpg"
-                alt="Man with dumbbells"
-                width="518"
-                height="760"
-                loading="lazy"
-                class="motivation-card-image"
-              />
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="training-types container-wide">
-        <h2 class="visually-hidden">Types of training</h2>
-        <ul class="training-types-list">
-          <li class="training-types-item">
-            <img
-              src="./icons/training-types/1.svg"
-              alt=""
-              class="training-types-image"
-              width="150"
-              height="140"
-              loading="lazy"
-            />
-            <h3 class="training-types-item-title">Maxpump</h3>
-          </li>
-          <li class="training-types-item">
-            <img
-              src="./icons/training-types/2.svg"
-              alt=""
-              class="training-types-image"
-              width="150"
-              height="140"
-              loading="lazy"
-            />
-            <h3 class="training-types-item-title">aron gym</h3>
-          </li>
-          <li class="training-types-item">
-            <img
-              src="./icons/training-types/3.svg"
-              alt=""
-              class="training-types-image"
-              width="150"
-              height="140"
-              loading="lazy"
-            />
-            <h3 class="training-types-item-title">fit & tone</h3>
-          </li>
-          <li class="training-types-item">
-            <img
-              src="./icons/training-types/4.svg"
-              alt=""
-              class="training-types-image"
-              width="150"
-              height="140"
-              loading="lazy"
-            />
-            <h3 class="training-types-item-title">forza</h3>
-          </li>
-          <li class="training-types-item">
-            <img
-              src="./icons/training-types/5.svg"
-              alt=""
-              class="training-types-image"
-              width="150"
-              height="140"
-              loading="lazy"
-            />
-            <h3 class="training-types-item-title">balance fitness</h3>
-          </li>
-          <li class="training-types-item">
-            <img
-              src="./icons/training-types/6.svg"
-              alt=""
-              class="training-types-image"
-              width="150"
-              height="140"
-              loading="lazy"
-            />
-            <h3 class="training-types-item-title">body sculpt</h3>
-          </li>
-        </ul>
-      </section>
-      <section class="join-us">
-        <div class="join-us-video-wrapper">
-          <video
-            src=""
-            class="join-us-video"
-            width="960"
-            height="600"
-            poster="./images/video-placeholder.jpg"
-          ></video>
-          <button class="join-us-video-play-button" type="button">Play</button>
-        </div>
-        <div class="join-us-body container">
-          <h2 class="join-us-title">Join us</h2>
-          <form class="join-us-form">
-            <header class="join-us-form-header">
-              <h3
-                class="join-us-form-title backdrop-title centered title-big"
-                data-title="Go!"
-              >
-                Start here
-              </h3>
-              <div class="join-us-form-subtitle section-description">
-                fill the form below to start your journey
-              </div>
-            </header>
-            <div class="join-us-form-body">
-              <label for="username" class="visually-hidden">Name</label>
-              <input
-                class="join-us-form-input input"
-                id="username"
-                placeholder="Name"
-              />
-              <label for="email" class="visually-hidden">Email</label>
-              <input
-                class="join-us-form-input input"
-                id="email"
-                placeholder="Email"
-                type="email"
-              />
-              <button
-                class="join-us-form-button button transparent"
-                type="submit"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <section class="location container-wide">
-        <img
-          src="./images/map.jpg"
-          alt="Bracnhes on the map"
-          class="location-map-image"
-          max-width="960"
-          max-height="600"
-          loading="lazy"
-        />
-        <div class="location-body">
-          <h2
-            class="location-title title-medium backdrop-title centered"
-            data-title="Look"
-          >
-            Find us near you
+        <h1 class="visually-hidden">Планетарий Celestia</h1>
+        <div class="banner__mystery-stars">
+          <h2 class="banner__title-mystery-stars">
+            Раскройте тайны звезд с помощью Celestia
           </h2>
-          <div class="location-description">
-            <p>
-              Nec suas signiferumque id. An eum labore commodo principes. Usu
-              diam noluisse cu, nam adipisci
+          <p class="banner__discription text-black">
+            <!--знаю что плохо называть цветами но я не знаю как назвать -->
+            <!--тут 3 пэшки но они различаются как задать разные классы-->
+            Мы проводим специальные мероприятия, такие как ночи наблюдения за
+            звездами, лекции и многое другое
+          </p>
+          <a class="banner__link-more-details" href="#"> Подробнее </a
+          ><!--может сделать модификатор есть такие же синие кнопки-->
+        </div>
+        <div class="banner__discount-for-pensioners">
+          <h2 class="banner__title-discount-for-pensioners">20%</h2>
+          <p class="banner-discription text-white">
+            <!------p------------------->
+            скидка пенсионерам
+          </p>
+          <a class="banner__link-arrow" href="#"
+            ><!--как задать модификатор есть такая же ссылка в секции акции и скидки-->
+            <img class="arrow-image" src="#" alt="стрелка" />
+          </a>
+        </div>
+        <div class="banner__for-couples">
+          <h2 class="banner__title-for-couples">для парочек</h2>
+          <p class="banner-discription text-black">
+            <!---p------------------------>
+            ночи наблюденияза звездами
+          </p>
+          <a class="banner__link-arrow" href="#"
+            ><!--тут тоже как дать название классу-->
+            <img class="arrow-image" src="#" alt="стрелка" />
+          </a>
+        </div>
+        <ul class="banner__list">
+          <li class="banner__item">
+            <p class="banner-numbers">>20</p>
+            <!--тут не понмю  что говорил-->
+            <p>телескопов</p>
+          </li>
+          <li class="banner__item">
+            <p class="banner-numbers">>100</p>
+            <!--тут не понмю  что говорил-->
+            <p>программ</p>
+          </li>
+          <li class="banner__item">
+            <p class="banner-numbers">>50</p>
+            <!--тут не понмю  что говорил-->
+            <p>залов</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="events">
+        <h2 class="events__title">События</h2>
+        <ul class="events__list-header">
+          <li class="events__item-header">
+            <button class="events__button button button-transparent">
+              <!--если смысл всем кнопкам давать класс button-->
+              Программы</button
+            ><!--как тут с кнопками-->
+          </li>
+          <li class="events__item-header">
+            <button class="events__button button button-transparent">
+              Мероприятия
+            </button>
+          </li>
+          <li class="events__item-header">
+            <button class="events__button button button-transparent">
+              Лекции
+            </button>
+          </li>
+        </ul>
+        <ul class="events__list-body">
+          <li class="events__item-body">
+            <img
+              class="events__image"
+              src="#"
+              alt="картинка космоса"
+            /><!--events__image наверно нужно ещё что то дописать так как тут много image-->
+            <span class="events__">+7</span
+            ><!--как это назвать-->
+            <p class="events-discription">полнокупольная программа</p>
+            <!--проблема с пешками как их назвать-->
+            <h3 class="events__title-body">прогулка по звездному небу</h3>
+            <p class="events-discription">
+              Мы предлагаем вам прогуляться по самым ярким созвездиям северного
+              полушария, насладиться петербургским звездным небои всех сезонов,
+              полюповаться Млечным Путем и, конечно, загадать заветное желание
+              на "падающую звезду"
             </p>
-          </div>
-          <a href="/" class="location-button button transparent"> View more </a>
-        </div>
-      </section>
-      <section class="family">
-        <header class="family-header container">
-          <h2
-            class="family-title title-big backdrop-title centered"
-            data-title="Part"
-          >
-            Be a part of our fit family
-          </h2>
-          <div class="family-description section-description">
-            <p>Training helps you think and feel better. join us!</p>
-          </div>
-        </header>
-        <div class="family-body container-wide">
-          <img
-            src="./images/family/1.jpg"
-            alt="Training people"
-            class="family-image"
-            width="414"
-            height="479"
-            loading="lazy"
-          />
-          <img
-            src="./images/family/2.jpg"
-            alt="Training people"
-            class="family-image"
-            width="744"
-            height="479"
-            loading="lazy"
-          />
-          <img
-            src="./images/family/3.jpg"
-            alt="Training people"
-            class="family-image"
-            width="396"
-            height="479"
-            loading="lazy"
-          />
-          <img
-            src="./images/family/4.jpg"
-            alt="Training people"
-            class="family-image"
-            width="396"
-            height="479"
-            loading="lazy"
-          />
-          <img
-            src="./images/family/1.jpg"
-            alt="Training people"
-            class="family-image"
-            width="414"
-            height="479"
-            loading="lazy"
-          />
-        </div>
-      </section>
-      <section class="calculate">
-        <div class="calculate-inner container">
-          <div class="calculate-body">
-            <h2
-              class="calculate-title title-medium backdrop-title"
-              data-title="BMI"
+            <ul class="events__list-price">
+              <li class="events__item-price">
+                <img
+                  class="events__image"
+                  src="#"
+                  alt="child"
+                /><!--image--------------->
+                <p class="events-price">400 рублей</p>
+                <!--как найти значок рубля-->
+              </li>
+              <li class="events__item-price">
+                <img
+                  class="events__image-price"
+                  src="#"
+                  alt="parent"
+                /><!--image------------------->
+                <p class="events-price">600 рублей</p>
+              </li>
+            </ul>
+            <select
+              class="events__button-data button button-transparent"
+              name="#"
+              id="#"
+              required
             >
-              Input your BMI
-            </h2>
-            <div class="calculate-description">
-              <p>
-                Duo graece ponderum ne, ei mel aliquando. Pro te tamquam
-                nonumes, nam no nemore epicurei
+              <option value="0" disabled selected>выбрать дату</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">2</option>
+            </select>
+            <a class="events__link-buy-ticket button" href="#">Купить билет</a
+            ><!--синяя кнопка-->
+          </li>
+          <li class="events__item-body"></li>
+          <li class="events__item-body"></li>
+        </ul>
+        <button class="events__button-showmore button">Показать ещё</button>
+      </section>
+
+      <section class="promotions-and-discounts">
+        <h2 class="promotions-and-discounts__title">Акции и скидки</h2>
+        <ul class="promotions-and-discounts__list">
+          <li class="promotions-and-discounts__item">
+            <!--тут вроде div надо сделать -->
+            <div class="promotions-and-discounts-card">
+              <!--как назвать-->
+              <img
+                class="promotions-and-discounts__image"
+                src="#"
+                alt="grandparents"
+              />
+              <h3 class="promotions-and-discounts__title-card">
+                Скидка для пенсионеров
+              </h3>
+              <p class="promotions-and-discounts-discription">
+                Все пенсионеры получат 20% скидку на билет при посещении
+                планетария
               </p>
+              <a class="promotions-and-discounts__link" href="#">
+                <img class="arrow-image" src="#" alt="strelka" />
+              </a>
             </div>
-            <form class="calculate-form">
-              <div class="calculate-form-body">
-                <label for="height" class="visually-hidden">Height</label>
-                <input
-                  class="calculate-input input"
-                  id="height"
-                  placeholder="Height / cm"
-                  type="number"
-                />
+          </li>
+          <li class="promotions-and-discounts__item"></li>
+          <li class="promotions-and-discounts__item"></li>
+        </ul>
+        <button
+          class="promotions-and-discounts__button button-pagination right-button"
+        >
+          <!--нужно ли называть так promotions-and-discounts__button -->
+          <img class="right" src="#" alt="right" /><!--как назвать-->
+        </button>
+        <button
+          class="promotions-and-discounts__button button-pagination left-button"
+        >
+          <!--нужно ли называть так promotions-and-discounts__button -->
+          <img class="left" src="#" alt="left" /><!--как назвать-->
+        </button>
+      </section>
 
-                <label for="weight" class="visually-hidden">Weight</label>
-                <input
-                  class="calculate-input input"
-                  id="weight"
-                  placeholder="Weight / kg"
-                  type="number"
-                />
+      <section class="reviews-and-marks">
+        <!--нумерованный список код исправленный код не помню как надо было менять-->
+        <h2 class="reviews-and-marks__title">Отзывы и отметки</h2>
+        <ol class="reviews-and-marks__list">
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            <img class="reviews-and-marks__image" src="#" alt="hand" />
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 2
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 3
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 4
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 5
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 6
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 7
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 8
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 9
+          </li>
+          <li class="reviews-and-marks__item">
+            <button class="reviews-and-marks__button" type="button"></button>
+            картинка 10
+          </li>
+        </ol>
+        <button class="reviews-and-marks__button pagination-button">
+          <img class="right" src="#" alt="right" />
+        </button>
+        <button class="reviews-and-marks__button pagination-button">
+          <img class="left" src="#" alt="left" />
+        </button>
+      </section>
 
-                <label for="age" class="visually-hidden">Age</label>
-                <input
-                  class="calculate-input input"
-                  id="age"
-                  placeholder="Age"
-                  type="number"
-                />
-
-                <label class="visually-hidden" for="gender">Gender</label>
-                <select class="calculate-input input" id="gender" required>
-                  <option value="" disabled selected>Gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-
-                <label class="visually-hidden" for="activity-factor"
-                  >Activity factor</label
-                >
-                <select
-                  class="calculate-input input wide"
-                  id="activity-factor"
-                  required
-                >
-                  <option value="" disabled selected>
-                    Select an activity factor:
-                  </option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                </select>
-              </div>
-              <button class="calculate-button button transparent" type="submit">
-                Calculate
-              </button>
-            </form>
-          </div>
-          <div class="calculate-table-wrapper">
-            <table class="calculate-table">
-              <thead>
-                <tr>
-                  <th>BMI</th>
-                  <th>Weight status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Below 18.5</td>
-                  <td>Underweight</td>
-                </tr>
-                <tr>
-                  <td>18.5 - 24.9</td>
-                  <td>Healthy</td>
-                </tr>
-                <tr>
-                  <td>25.0 - 29.9</td>
-                  <td>Overweight</td>
-                </tr>
-                <tr>
-                  <td>30.0 - and Above</td>
-                  <td>Obese</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="2">
-                    <b>BMR</b> Metabolic Rate / <b>BMI</b> Body Mass Index
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
+      <section class="questions">
+        <h2 class="questions__title">Часто задаваемые вопросы</h2>
+        <ul class="questions__list">
+          <li class="questions__item">
+            <details class="questions__details">
+              <!--тут при нажатии должно  меняться на черный? тип сначала синий потом черный? как сделать чтобы менялось-->
+              <summary class="questions__summary">
+                Какие выставки и события, посвященные космосу, проходят в
+                планетарии?
+                <img
+                  class="minus-image"
+                  src="#"
+                  alt="minus"
+                /><!--ка назввать-->
+              </summary>
+              <p class="questions-discription">
+                Выставка фотографий и изображений космических объектов,
+                интерактивные демонстрации о нашей Солнечной системе,
+                путешествиях по галактикам и другим небесным телам. Также
+                проводятся лекции и семинары о космической науке и астрономии, а
+                иногда даже организуются ночные наблюдения за звездами.
+              </p>
+            </details>
+          </li>
+          <li class="questions__item">
+            <details class="questions__details">
+              <summary class="questions__summary">
+                Какие возможности есть для детей на выставках в планетарий?
+                <img class="plus-image" src="#" alt="plus" /><!--ка назввать-->
+              </summary>
+            </details>
+          </li>
+          <li class="questions__item">
+            <details class="questions__details">
+              <summary class="questions__summary">
+                Какова стоимость посещения выставок и событий в планетарии?
+                <img class="" src="#" alt="open" /><!--ка назввать-->
+              </summary>
+            </details>
+          </li>
+        </ul>
+        <a class="questions__link button" href="#">Показать ещё</a
+        ><!--синяя кнопка--------->
+      </section>
+      <section class="registration">
+        <h2 class="registration__title">
+          Ваш билет в космос - быстрая запись на экскурсию
+        </h2>
+        <img class="registration__image" src="#" alt="kosmos" />
+        <p class="registration-discription">
+          <!--тут паддинг 30px значит нужно давать другой  класс?-->
+          Запишитесь на экскурсию в планетарий. Просто укажите ваше имя,
+          электронную почту и дату, и мы свяжемся с вами для подтверждения
+        </p>
+        <form class="registration__form">
+          <label class="registration__label"
+            ><!--button-transparent давать label -у или input -у-->
+            <input
+              class="registration__input input registration__input--active"
+              type="text"
+              placeholder="Введите ваше имя"
+            />
+          </label>
+          <label class="registration__label">
+            <input
+              class="registration__input input"
+              type="tel"
+              placeholder="Номер телефона"
+            />
+          </label>
+          <select class="registration-input input" required>
+            <!--тут какой класс-->
+            <option value="uiui" disabled selected>дата посещения</option>
+            <option value="kljk">12.04</option>
+            <option value="kljk">12.05</option>
+          </select>
+          <button class="registration__button button" type="submit">
+            Отправить
+          </button>
+          <!--синяя кнопка------>
+        </form>
+        <p class="registration-policy">
+          <!--не знаю как назвать-->
+          *нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+        </p>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-main">
-        <div class="footer-main-inner container">
-          <header class="footer-header">
-            <a href="/" class="footer-logo">
-              <img
-                src="./images/logo.png"
-                alt="Kropp Logo"
-                class="footer-logo-image"
-                width="270"
-                height="50"
-                loading="lazy"
-              />
-            </a>
-            <p class="footer-description section-description">
-              please feel free to send us an e-mail at
-              <a href="mailto:dropp@qodeinteractive.com"
-                >kropp@qodeinteractive.com</a
-              >
-              For any additional inquiries
-            </p>
-          </header>
-          <div class="footer-body">
-            <div class="footer-column">
-              <h2 class="footer-column-title">About</h2>
-              <p class="footer-about">
-                Shape up your site with Kropp, a theme especially made for
-                fitness & gym websites.
-              </p>
-            </div>
-            <div class="footer-column">
-              <h2 class="footer-column-title">Working hours</h2>
-              <div class="footer-schedule">
-                Monday - Friday <br />
-                <time datetime="05:30/24:00">05:30 - 24:00</time>
-              </div>
-              <div class="footer-schedule">
-                Weekdays <br />
-                <time datetime="00:00/24:00">00:00 - 24:00</time>
-              </div>
-            </div>
-            <div class="footer-column">
-              <h2 class="footer-column-title">Location</h2>
-              <address class="footer-address">
-                68 Jay Street, Brooklyn, <br />
-                NY 11201, United States
-              </address>
-              <div class="footer-contacts">
-                <ul class="footer-contacts-list">
-                  <li class="footer-contacts-item">
-                    <a
-                      href="mailto:kropp@qodeinteractive.com"
-                      class="footer-contacts-link"
-                      >kropp@qodeinteractive.com</a
-                    >
-                  </li>
-                  <li class="footer-contacts-item">
-                    <a href="tel:+17184076400" class="footer-contacts-link"
-                      >+ (1) 718 - 407 - 6400</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-column">
-              <h2 class="footer-column-title has-arrow">start now</h2>
-              <form class="footer-subscribe">
-                <label for="subscribe-email" class="vesually-hidden"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="footer-subscribe-input input"
-                  id="subscribe-email"
-                  placeholder="email"
-                />
-                <button
-                  class="footer-subscribe-button"
-                  type="submit"
-                  title="Subscribe"
-                >
-                  <span class="visually-hidden">Subscribe</span>
-                </button>
-              </form>
-              <div class="footer-soc1als">
-                <ul class="footer-soc1als-list">
-                  <li class="footer-soc1als-item">
-                    <a class="footer-soc1als-link" href="/" target="_blank">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M16.8217 5.1344C16.0886 4.29394 15.6479 3.19805 15.6479 2H14.7293M16.8217 5.1344C17.4898 5.90063 18.3944 6.45788 19.4245 6.67608C19.7446 6.74574 20.0786 6.78293 20.4266 6.78293V10.2191C18.645 10.2191 16.9932 9.64801 15.6477 8.68211V15.6707C15.6477 19.1627 12.8082 22 9.32386 22C7.50043 22 5.85334 21.2198 4.69806 19.98C3.64486 18.847 2.99994 17.3331 2.99994 15.6707C2.99994 12.2298 5.75592 9.42509 9.17073 9.35079M16.8217 5.1344C16.8039 5.12276 16.7861 5.11101 16.7684 5.09914M6.9855 17.3517C6.64217 16.8781 6.43802 16.2977 6.43802 15.6661C6.43802 14.0734 7.73249 12.7778 9.32394 12.7778C9.62087 12.7778 9.9085 12.8288 10.1776 12.9124V9.40192C9.89921 9.36473 9.61622 9.34149 9.32394 9.34149C9.27287 9.34149 8.86177 9.36884 8.81073 9.36884M14.7244 2H12.2097L12.2051 15.7775C12.1494 17.3192 10.8781 18.5591 9.32386 18.5591C8.35878 18.5591 7.50971 18.0808 6.98079 17.3564"
-                          stroke="#000000"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-soc1als-item">
-                    <a class="footer-soc1als-link" href="/" target="_blank">
-                      <svg
-                        viewBox="0 -3 20 20"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          id="Page-1"
-                          stroke="none"
-                          stroke-width="1"
-                          fill="none"
-                          fill-rule="evenodd"
-                        >
-                          <g
-                            id="Dribbble-Light-Preview"
-                            transform="translate(-300.000000, -7442.000000)"
-                            fill="#000000"
-                          >
-                            <g
-                              id="icons"
-                              transform="translate(56.000000, 160.000000)"
-                            >
-                              <path
-                                d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
-                                id="youtube-[#168]"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-soc1als-item">
-                    <a class="footer-soc1als-link" href="/" target="_blank">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                          fill="#0F0F0F"
-                        />
-                        <path
-                          d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                          fill="#0F0F0F"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-                          fill="#0F0F0F"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-soc1als-item">
-                    <a class="footer-soc1als-link" href="/" target="_blank">
-                      <svg
-                        viewBox="-5 0 20 20"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          id="Page-1"
-                          stroke="none"
-                          stroke-width="1"
-                          fill="none"
-                          fill-rule="evenodd"
-                        >
-                          <g
-                            id="Dribbble-Light-Preview"
-                            transform="translate(-385.000000, -7399.000000)"
-                            fill="#000000"
-                          >
-                            <g
-                              id="icons"
-                              transform="translate(56.000000, 160.000000)"
-                            >
-                              <path
-                                d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
-                                id="facebook-[#176]"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-soc1als-item">
-                    <a class="footer-soc1als-link" href="/" target="_blank">
-                      <svg
-                        viewBox="0 -2 20 20"
-                        version="1.1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          id="Page-1"
-                          stroke="none"
-                          stroke-width="1"
-                          fill="none"
-                          fill-rule="evenodd"
-                        >
-                          <g
-                            id="Dribbble-Light-Preview"
-                            transform="translate(-60.000000, -7521.000000)"
-                            fill="#000000"
-                          >
-                            <g
-                              id="icons"
-                              transform="translate(56.000000, 160.000000)"
-                            >
-                              <path
-                                d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
-                                id="twitter-[#154]"
-                              ></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <h2 class="footer__title">Как нас найти?</h2>
+      <img class="footer__image-map" src="#" alt="map" />
+      <img class="footer__image-locator" src="#" alt="locator" />
+      <p class="footer-street">Екатеринбург, ул.Маршала Жукова, дом 12</p>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <img class="footer__image-facebook" src="#" alt="facebook"
+          /></a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <img class="footer__image-instagramm" src="#" alt="instagramm"
+          /></a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            <img class="footer__image-youtube" src="#" alt="youtube"
+          /></a>
+        </li>
+      </ul>
+      <div class="footer__contacts">
+        <div class="footer__contacts-social">
+          <a class="footer__contacts-link" href="#">
+            <img class="footer__image-watsap" src="#" alt="watsap" />
+          </a>
+          <a class="footer__contacts-link" href="#">
+            <img class="footer__image-telegramm" src="#" alt="telegramm" />
+          </a>
         </div>
+        <a class="footer__contacts-link" href="tel:88123363636"
+          >+7(812) 336 36 36</a
+        >
       </div>
-      <div class="footer-extra">
-        <div class="footer-extra-inner container">
-          <div class="footer-copyright">
-            © <time datetime="2022">2022</time> Qode Interactive, All Rights
-            Reserved | <a href="/">Privacy Policy</a> |
-            <a href="/">Contact Us</a>
-          </div>
-        </div>
+      <div class="footer__newsletter">
+        <h3 class="footer__title-newsletter">Подписаться на рассылку</h3>
+        <form class="footer__form">
+          <!--тут что с  input -ами-->
+          <input
+            class="footer__input input button-transparent"
+            type="email"
+            placeholder="Электронная почта"
+          />
+          <button class="footer__button button" type="submit">
+            Подписаться
+          </button>
+        </form>
       </div>
+      <a class="footer__link-poliсу" chref="#">Политика конфидециальности</a>
     </footer>
   </body>
 </html>

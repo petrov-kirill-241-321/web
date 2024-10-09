@@ -1,0 +1,241 @@
+/* ВОПРОСЫ ПО 2 ЛАБЕ 1. 7) Задать размер текста (font-size) для в rem.
+ Рекомендуется в этом случае для html (селектор - :root) 
+ задать font-size в 62.5%,
+ тогда будет проще рассчитывать rem для остального текста. 
+
+ 2. выровнять текст (text-align) что это значит тип просто 
+ выровнять текст по центру допустим заголовки или прям паддинги 
+ задавать*/
+@font-face {
+  font-family: "Benzin";
+  src: local("benzin-bold"), url("../fonts/benzin-bold.otf") format("otf");
+  font-style: normal;
+  font-display: swap;
+}
+/* @font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy-ExtraBold"),
+    url("../fonts/Gilroy-ExtraBold.otf") format("otf");
+  font-style: normal;
+  font-display: swap;
+} */
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy-Light"), url("../fonts/Gilroy-Light.otf") format("otf");
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-black: #131313;
+  --color-black-alternetive: #1e1e1e;
+  --color-white: #ffffff;
+  --color-white-alternetive: rgba(255, 255, 255, 0.3);
+  --color-blue: #3805f2;
+  --color-blue-alternetive: #324eea;
+  --font-family-general: "Benzin", sans-serif;
+  --font-family-direction: "Gilroy", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+/* нужно ли в боди задавать цвета */
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+a {
+  font-family: var(--font-family-general);
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+h2 {
+  font-family: var(--font-family-general);
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--font-family-general);
+}
+
+p {
+  font-family: var(--font-family-direction);
+  margin-bottom: 20px;
+}
+
+.button {
+  font-family: var(--font-family-general);
+}
+
+.button-transparent {
+  border: 1px solid var(--color-white-alternetive);
+  background-color: transparent;
+  border-radius: 20px;
+  color: var(--color-white);
+  padding: 10px 14px;
+}
+
+.header__button-menu {
+  background-color: var(--color-blue-alternetive);
+  width: 32px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.banner__mystery-stars {
+  background-color: var(--color-white);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.banner__title-mystery-stars {
+  color: var(--color-black-alternetive);
+  text-align: start;
+}
+
+.text-black {
+  color: var(--color-black-alternetive);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.banner__link-more-details {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.banner__discount-for-pensioners {
+  background-color: var(--color-blue);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.banner__title-discount-for-pensioners {
+  text-align: start;
+}
+
+.banner__for-couples {
+  background-color: var(--color-white);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.banner__title-for-couples {
+  color: var(--color-black-alternetive);
+  text-align: start;
+}
+
+.events__link-buy-ticket {
+  border-radius: 100px;
+  background-color: var(--color-blue);
+  padding: 13.5px 15px;
+}
+
+.events__button-showmore {
+  padding: 16px 87.5px;
+  border-radius: 31px;
+  background-color: var(--color-white);
+}
+
+.banner-numbers {
+  line-height: 13.2px;
+  font-family: var(--font-family-general);
+}
+
+.events__title {
+  margin-bottom: 30px;
+}
+
+.events-paragraph {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.events__title-body {
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-bottom: 20px;
+}
+
+.events-price {
+  font-family: var(--font-family-direction);
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.promotions-and-discounts__title {
+  margin-bottom: 30px;
+}
+
+.promotions-and-discounts__title-card {
+  line-height: 13.2px;
+}
+
+.promotions-and-discounts-direction {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/*  block reviews-and-marks*/
+
+.reviews-and-marks__title {
+  margin-bottom: 30px;
+}
+
+details > summary {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  cursor: pointer;
+  list-style: none;
+  line-height: 13.2px;
+}
+
+details[open] > summary {
+  color: var(--color-black);
+}
+
+details p {
+  color: var(--color-white);
+}
+
+.registration__button {
+  line-height: 10.8px;
+}
+
+.footer__title-newsletter {
+  line-height: 19.2px;
+  color: var(--color-blue);
+}
+
+.footer__button {
+  line-height: 14.4px;
+}
+
+.footer__link-poliсу {
+  font-weight: 500;
+  font-family: var(--font-family-direction);
+}
