@@ -1,13 +1,5 @@
-/* ВОПРОСЫ ПО 2 ЛАБЕ 1. 7) Задать размер текста (font-size) для в rem.
- Рекомендуется в этом случае для html (селектор - :root) 
- задать font-size в 62.5%,
- тогда будет проще рассчитывать rem для остального текста. 
-
- 2. выровнять текст (text-align) что это значит тип просто 
- выровнять текст по центру допустим заголовки или прям паддинги 
- задавать*/
 @font-face {
-  font-family: "Benzin";
+  font-family: "Benzin-bold";
   src: local("benzin-bold"), url("../fonts/benzin-bold.otf") format("otf");
   font-style: normal;
   font-display: swap;
@@ -21,7 +13,7 @@
 } */
 @font-face {
   font-family: "Gilroy";
-  src: local("Gilroy-Light"), url("../fonts/Gilroy-Light.otf") format("otf");
+  src: local("Gilroy"), url("../fonts/Gilroy-Light.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
@@ -33,8 +25,9 @@
   --color-white-alternetive: rgba(255, 255, 255, 0.3);
   --color-blue: #3805f2;
   --color-blue-alternetive: #324eea;
-  --font-family-general: "Benzin", sans-serif;
+  --font-family-general: "Benzin-bold", sans-serif;
   --font-family-direction: "Gilroy", sans-serif;
+  
 }
 
 .visually-hidden {
@@ -49,7 +42,7 @@
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
-/* нужно ли в боди задавать цвета */
+
 body {
   background-color: var(--color-black);
   color: var(--color-white);
@@ -80,16 +73,8 @@ p {
   margin-bottom: 20px;
 }
 
-.button {
+button {
   font-family: var(--font-family-general);
-}
-
-.button-transparent {
-  border: 1px solid var(--color-white-alternetive);
-  background-color: transparent;
-  border-radius: 20px;
-  color: var(--color-white);
-  padding: 10px 14px;
 }
 
 .header__button-menu {
@@ -99,80 +84,84 @@ p {
   border-radius: 50%;
 }
 
-.banner__mystery-stars {
+.banner__container-stars {
   background-color: var(--color-white);
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 20px;
 }
 
-.banner__title-mystery-stars {
+.banner__title--black {
   color: var(--color-black-alternetive);
   text-align: start;
 }
 
-.text-black {
+.banner__discription--black {
   color: var(--color-black-alternetive);
 }
 
-.text-white {
-  color: var(--color-white);
-}
-
-.banner__link-more-details {
+.banner__link {
   color: var(--color-white);
   background-color: var(--color-blue);
   padding: 10px 20px;
   border-radius: 20px;
 }
 
-.banner__discount-for-pensioners {
+.banner__container-sell {
   background-color: var(--color-blue);
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 10px;
 }
 
-.banner__title-discount-for-pensioners {
+.banner__title {
   text-align: start;
 }
 
-.banner__for-couples {
+.banner__container-couples {
   background-color: var(--color-white);
   padding: 20px;
   border-radius: 20px;
 }
 
-.banner__title-for-couples {
-  color: var(--color-black-alternetive);
-  text-align: start;
+.banner__numbers {
+  line-height: 13.2px;
+  font-family: var(--font-family-general);
 }
 
-.events__link-buy-ticket {
+.events__button--transparent {
+  border: 1px solid var(--color-white-alternetive);
+  background-color: transparent;
+  border-radius: 20px;
+  color: var(--color-white);
+  padding: 10px 14px;
+  font-family: var(--font-family-direction);
+}
+
+.events__button--active {
+  background-color: var(--color-blue-alternetive);
+}
+
+.events__text {
+  text-transform: uppercase;
+}
+
+.events__link {
   border-radius: 100px;
   background-color: var(--color-blue);
   padding: 13.5px 15px;
+  line-height: 14.4px;
 }
 
 .events__button-showmore {
   padding: 16px 87.5px;
   border-radius: 31px;
   background-color: var(--color-white);
-}
-
-.banner-numbers {
-  line-height: 13.2px;
-  font-family: var(--font-family-general);
+  line-height: 14.4px;
 }
 
 .events__title {
   margin-bottom: 30px;
-}
-
-.events-paragraph {
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 14px;
 }
 
 .events__title-body {
@@ -181,29 +170,122 @@ p {
   margin-bottom: 20px;
 }
 
-.events-price {
+.price__text {
   font-family: var(--font-family-direction);
   font-size: 14px;
   line-height: 16.8px;
 }
 
-.promotions-and-discounts__title {
+.discount__title {
   margin-bottom: 30px;
 }
 
-.promotions-and-discounts__title-card {
+.discount__subtitle {
+  font-size: 12px;
   line-height: 13.2px;
 }
 
-.promotions-and-discounts-direction {
+.discount__container {
+  background-color: var(--color-blue);
+}
+
+.discount__discription {
   font-size: 10px;
   line-height: 14px;
 }
 
-/*  block reviews-and-marks*/
+.discount__link {
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
 
-.reviews-and-marks__title {
+.discount__button {
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+.discount__button-blue {
+  background-color: var(--color-black-alternetive);
+  border-radius: 50%;
+}
+
+.reviews__title {
   margin-bottom: 30px;
+}
+
+.reviews__button {
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+.reviews__button--blue {
+  background-color: var(--color-black-alternetive);
+  border-radius: 50%;
+}
+
+.questions__link {
+  background-color: var(--color-blue);
+  border-radius: 55px;
+  line-height: 14.4px;
+}
+
+.registration__input--transparent {
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+  border-radius: 40px;
+  color: var(--color-white);
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+.registration__select {
+  border: 1px solid var(--color-white);
+  background-color: transparent;
+  border-radius: 40px;
+  color: var(--color-white);
+  font-family: var(--font-family-direction);
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+.registration__button {
+  background-color: var(--color-blue);
+  border-radius: 55px;
+}
+
+.registration__policy {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.footer__link {
+  background-color: var(--color-blue);
+  border-radius: 50%;
+}
+
+.newsletter {
+  background-color: var(--color-white);
+  border-radius: 30px;
+}
+
+.newsletter__title {
+  color: var(--color-blue);
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.newsletter__input {
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid var(--color-black-alternetive);
+  font-size: 14px;
+  line-height: 16.24px;
+}
+
+.newsletter__button {
+  background-color: var(--color-blue);
+  border-radius: 100px;
 }
 
 details > summary {
@@ -212,6 +294,8 @@ details > summary {
   cursor: pointer;
   list-style: none;
   line-height: 13.2px;
+  border-radius: 30px;
+  font-size: 12px;
 }
 
 details[open] > summary {
@@ -226,12 +310,12 @@ details p {
   line-height: 10.8px;
 }
 
-.footer__title-newsletter {
+.newsletter__title {
   line-height: 19.2px;
   color: var(--color-blue);
 }
 
-.footer__button {
+.newsletter__button {
   line-height: 14.4px;
 }
 

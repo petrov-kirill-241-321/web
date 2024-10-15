@@ -8,10 +8,9 @@
     <title>Планетарий</title>
   </head>
   <body>
-    <!--есть белая  и синяя ссылка как назвать класс чтобы не повтторялось-->
     <header class="header">
       <a class="header__link" href="#">
-        <img class="header__image" src="#" alt="logo" /><!---->
+        <img class="header__image" src="#" alt="logo" />
       </a>
       <a class="header__link" href="#">
         <img class="header__image" src="#" alt="watsap" />
@@ -26,55 +25,51 @@
     <main class="content">
       <section class="banner">
         <h1 class="visually-hidden">Планетарий Celestia</h1>
-        <div class="banner__mystery-stars">
-          <h2 class="banner__title-mystery-stars">
-            Раскройте тайны звезд с помощью Celestia
+        <div class="banner__container-stars">
+          <h2 class="banner__title banner__title--black">
+            Раскройте тайны звезд с помощью <span>Celestia</span>
           </h2>
-          <p class="banner__discription text-black">
-            <!--знаю что плохо называть цветами но я не знаю как назвать -->
-            <!--тут 3 пэшки но они различаются как задать разные классы-->
+          <p class="banner__discription banner__discription--black">
             Мы проводим специальные мероприятия, такие как ночи наблюдения за
             звездами, лекции и многое другое
           </p>
-          <a class="banner__link-more-details" href="#"> Подробнее </a
-          ><!--может сделать модификатор есть такие же синие кнопки-->
+          <a class="banner__link" href="#"> Подробнее </a>
         </div>
-        <div class="banner__discount-for-pensioners">
-          <h2 class="banner__title-discount-for-pensioners">20%</h2>
-          <p class="banner-discription text-white">
-            <!------p------------------->
-            скидка пенсионерам
-          </p>
-          <a class="banner__link-arrow" href="#"
-            ><!--как задать модификатор есть такая же ссылка в секции акции и скидки-->
-            <img class="arrow-image" src="#" alt="стрелка" />
+        <div class="banner__container-sell">
+          <h2 class="banner__title">20%</h2>
+          <p class="banner-discription">скидка пенсионерам</p>
+          <a class="banner__link-arrow" href="#">
+            <img
+              class="banner__icon banner__icon--white"
+              src="#"
+              alt="стрелка"
+            />
           </a>
         </div>
-        <div class="banner__for-couples">
-          <h2 class="banner__title-for-couples">для парочек</h2>
-          <p class="banner-discription text-black">
-            <!---p------------------------>
-            ночи наблюденияза звездами
+        <div class="banner__container-couples">
+          <h2 class="banner__title banner__title--black">для парочек</h2>
+          <p class="banner-discription banner__discription--black">
+            ночи наблюдения за звездами
           </p>
-          <a class="banner__link-arrow" href="#"
-            ><!--тут тоже как дать название классу-->
-            <img class="arrow-image" src="#" alt="стрелка" />
+          <a class="banner__link-arrow" href="#">
+            <img
+              class="banner__icon banner__icon--blue"
+              src="#"
+              alt="стрелка"
+            />
           </a>
         </div>
         <ul class="banner__list">
           <li class="banner__item">
-            <p class="banner-numbers">>20</p>
-            <!--тут не понмю  что говорил-->
+            <p class="banner__numbers">>20</p>
             <p>телескопов</p>
           </li>
           <li class="banner__item">
-            <p class="banner-numbers">>100</p>
-            <!--тут не понмю  что говорил-->
+            <p class="banner__numbers">>100</p>
             <p>программ</p>
           </li>
           <li class="banner__item">
-            <p class="banner-numbers">>50</p>
-            <!--тут не понмю  что говорил-->
+            <p class="banner__numbers">>50</p>
             <p>залов</p>
           </li>
         </ul>
@@ -82,64 +77,48 @@
 
       <section class="events">
         <h2 class="events__title">События</h2>
-        <ul class="events__list-header">
-          <li class="events__item-header">
-            <button class="events__button button button-transparent">
-              <!--если смысл всем кнопкам давать класс button-->
-              Программы</button
-            ><!--как тут с кнопками-->
+        <ul class="events__header-list">
+          <li class="events__header-item">
+            <button class="events__button events__button--active">
+              Программы
+            </button>
           </li>
           <li class="events__item-header">
-            <button class="events__button button button-transparent">
+            <button class="events__button events__button--transparent">
               Мероприятия
             </button>
           </li>
           <li class="events__item-header">
-            <button class="events__button button button-transparent">
+            <button class="events__button events__button--transparent">
               Лекции
             </button>
           </li>
         </ul>
-        <ul class="events__list-body">
-          <li class="events__item-body">
-            <img
-              class="events__image"
-              src="#"
-              alt="картинка космоса"
-            /><!--events__image наверно нужно ещё что то дописать так как тут много image-->
-            <span class="events__">+7</span
-            ><!--как это назвать-->
-            <p class="events-discription">полнокупольная программа</p>
-            <!--проблема с пешками как их назвать-->
+        <ul class="events__body-list">
+          <li class="events__body-item">
+            <img class="events__image" src="#" alt="картинка космоса" />
+            <span>+7</span>
+            <p class="events__text">полнокупольная программа</p>
             <h3 class="events__title-body">прогулка по звездному небу</h3>
-            <p class="events-discription">
+            <p class="events__discription">
               Мы предлагаем вам прогуляться по самым ярким созвездиям северного
               полушария, насладиться петербургским звездным небои всех сезонов,
               полюповаться Млечным Путем и, конечно, загадать заветное желание
               на "падающую звезду"
             </p>
-            <ul class="events__list-price">
-              <li class="events__item-price">
-                <img
-                  class="events__image"
-                  src="#"
-                  alt="child"
-                /><!--image--------------->
-                <p class="events-price">400 рублей</p>
-                <!--как найти значок рубля-->
+            <ul class="events__list-price prices">
+              <li class="prices__price price">
+                <img class="price__image" src="#" alt="child" />
+                <p class="price__text">400 рублей</p>
               </li>
-              <li class="events__item-price">
-                <img
-                  class="events__image-price"
-                  src="#"
-                  alt="parent"
-                /><!--image------------------->
-                <p class="events-price">600 рублей</p>
+              <li class="prices__price price">
+                <img class="price__image" src="#" alt="parent" />
+                <p class="price__text">600 рублей</p>
               </li>
             </ul>
             <select
-              class="events__button-data button button-transparent"
-              name="#"
+              class="events__button-data events__button--transparent"
+              name="choice_data"
               id="#"
               required
             >
@@ -148,107 +127,115 @@
               <option value="2">2</option>
               <option value="3">2</option>
             </select>
-            <a class="events__link-buy-ticket button" href="#">Купить билет</a
-            ><!--синяя кнопка-->
+            <button class="events__button" type="submit">Купить билет</button>
           </li>
-          <li class="events__item-body"></li>
-          <li class="events__item-body"></li>
+          <li class="events__body-item"></li>
+          <li class="events__body-item"></li>
         </ul>
-        <button class="events__button-showmore button">Показать ещё</button>
+        <button class="events__button-showmore">Показать ещё</button>
       </section>
 
-      <section class="promotions-and-discounts">
-        <h2 class="promotions-and-discounts__title">Акции и скидки</h2>
-        <ul class="promotions-and-discounts__list">
-          <li class="promotions-and-discounts__item">
-            <!--тут вроде div надо сделать -->
-            <div class="promotions-and-discounts-card">
-              <!--как назвать-->
-              <img
-                class="promotions-and-discounts__image"
-                src="#"
-                alt="grandparents"
-              />
-              <h3 class="promotions-and-discounts__title-card">
-                Скидка для пенсионеров
-              </h3>
-              <p class="promotions-and-discounts-discription">
-                Все пенсионеры получат 20% скидку на билет при посещении
-                планетария
-              </p>
-              <a class="promotions-and-discounts__link" href="#">
-                <img class="arrow-image" src="#" alt="strelka" />
-              </a>
+      <section class="discount">
+        <h2 class="discount__title">Акции и скидки</h2>
+        <ul class="discount__list">
+          <li class="discounts__item">
+            <div class="discounts__background-image">
+              <img class="discount__image" src="#" alt="grandparents" />
+              <div class="discount__container">
+                <h3 class="discount__subtitle">Скидка для пенсионеров</h3>
+                <p class="discount__discription">
+                  Все пенсионеры получат 20% скидку на билет при посещении
+                  планетария
+                </p>
+                <a class="discount__link" href="#">
+                  <img class="discount__icon" src="#" alt="strelka" />
+                </a>
+              </div>
             </div>
           </li>
-          <li class="promotions-and-discounts__item"></li>
-          <li class="promotions-and-discounts__item"></li>
+          <li class="discount__item"></li>
+          <li class="discount__item"></li>
         </ul>
-        <button
-          class="promotions-and-discounts__button button-pagination right-button"
-        >
-          <!--нужно ли называть так promotions-and-discounts__button -->
-          <img class="right" src="#" alt="right" /><!--как назвать-->
-        </button>
-        <button
-          class="promotions-and-discounts__button button-pagination left-button"
-        >
-          <!--нужно ли называть так promotions-and-discounts__button -->
-          <img class="left" src="#" alt="left" /><!--как назвать-->
-        </button>
+        <div class="discount__buttons">
+          <button class="discount__button">
+            <span class="visually-hidden"> back </span>
+            <img class="discount__image" src="#" alt="left" />
+          </button>
+          <button class="discount__button discount__button-blue">
+            <span class="visually-hidden"> forward </span>
+            <img class="discount__image" src="#" alt="right" />
+          </button>
+        </div>
       </section>
 
-      <section class="reviews-and-marks">
-        <!--нумерованный список код исправленный код не помню как надо было менять-->
-        <h2 class="reviews-and-marks__title">Отзывы и отметки</h2>
-        <ol class="reviews-and-marks__list">
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            <img class="reviews-and-marks__image" src="#" alt="hand" />
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 2
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 3
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 4
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 5
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 6
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 7
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 8
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 9
-          </li>
-          <li class="reviews-and-marks__item">
-            <button class="reviews-and-marks__button" type="button"></button>
-            картинка 10
-          </li>
-        </ol>
-        <button class="reviews-and-marks__button pagination-button">
-          <img class="right" src="#" alt="right" />
-        </button>
-        <button class="reviews-and-marks__button pagination-button">
-          <img class="left" src="#" alt="left" />
-        </button>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы и отметки</h2>
+        <div class="reviews__container">
+          <img class="reviews__avatar" src="" alt="девочка" />
+          <ol class="reviews__list">
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 1</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 2</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 3</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 4</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 5</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 6</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 7</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 8</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 9</span>
+              </button>
+            </li>
+            <li class="reviews__item">
+              <button class="reviews__button" type="button">
+                <span class="visually-hidden">картинка 10</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <img class="reviews__image" src="#" alt="рука" />
+        <div class="reviews__buttons">
+          <button class="reviews__button">
+            <span class="visually-hidden"> back </span>
+            <img class="reviews__icon" src="#" alt="left" />
+          </button>
+          <button class="reviews__button reviews__button--blue">
+            <span class="visually-hidden"> forward </span>
+            <img class="reviews__icon" src="#" alt="right" />
+          </button>
+        </div>
       </section>
 
       <section class="questions">
@@ -256,15 +243,14 @@
         <ul class="questions__list">
           <li class="questions__item">
             <details class="questions__details">
-              <!--тут при нажатии должно  меняться на черный? тип сначала синий потом черный? как сделать чтобы менялось-->
               <summary class="questions__summary">
                 Какие выставки и события, посвященные космосу, проходят в
                 планетарии?
                 <img
-                  class="minus-image"
+                  class="questions__image questions__image--minus"
                   src="#"
                   alt="minus"
-                /><!--ка назввать-->
+                />
               </summary>
               <p class="questions-discription">
                 Выставка фотографий и изображений космических объектов,
@@ -279,7 +265,11 @@
             <details class="questions__details">
               <summary class="questions__summary">
                 Какие возможности есть для детей на выставках в планетарий?
-                <img class="plus-image" src="#" alt="plus" /><!--ка назввать-->
+                <img
+                  class="questions__image questions__image--plus"
+                  src="#"
+                  alt="plus"
+                />
               </summary>
             </details>
           </li>
@@ -287,53 +277,53 @@
             <details class="questions__details">
               <summary class="questions__summary">
                 Какова стоимость посещения выставок и событий в планетарии?
-                <img class="" src="#" alt="open" /><!--ка назввать-->
+                <img
+                  class="questions__image questions__image--plus"
+                  src="#"
+                  alt="open"
+                />
               </summary>
             </details>
           </li>
         </ul>
-        <a class="questions__link button" href="#">Показать ещё</a
-        ><!--синяя кнопка--------->
+        <a class="questions__link" href="#">Показать ещё</a>
       </section>
       <section class="registration">
         <h2 class="registration__title">
           Ваш билет в космос - быстрая запись на экскурсию
         </h2>
         <img class="registration__image" src="#" alt="kosmos" />
-        <p class="registration-discription">
-          <!--тут паддинг 30px значит нужно давать другой  класс?-->
+        <p class="registration__discription">
           Запишитесь на экскурсию в планетарий. Просто укажите ваше имя,
           электронную почту и дату, и мы свяжемся с вами для подтверждения
         </p>
         <form class="registration__form">
-          <label class="registration__label"
-            ><!--button-transparent давать label -у или input -у-->
+          <label class="registration__label">
             <input
-              class="registration__input input registration__input--active"
+              class="registration__input registration__input--transparent"
               type="text"
+              name="name"
               placeholder="Введите ваше имя"
             />
           </label>
           <label class="registration__label">
             <input
-              class="registration__input input"
+              class="registration__input registration__input--transparent"
               type="tel"
+              name="phone"
               placeholder="Номер телефона"
             />
           </label>
-          <select class="registration-input input" required>
-            <!--тут какой класс-->
-            <option value="uiui" disabled selected>дата посещения</option>
-            <option value="kljk">12.04</option>
-            <option value="kljk">12.05</option>
+          <select class="registration__select" required>
+            <option value="дата посещения" disabled selected>
+              дата посещения
+            </option>
+            <option value="12.04">12.04</option>
+            <option value="12.05">12.05</option>
           </select>
-          <button class="registration__button button" type="submit">
-            Отправить
-          </button>
-          <!--синяя кнопка------>
+          <button class="registration__button" type="submit">Отправить</button>
         </form>
-        <p class="registration-policy">
-          <!--не знаю как назвать-->
+        <p class="registration__policy">
           *нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
         </p>
       </section>
@@ -342,52 +332,56 @@
       <h2 class="footer__title">Как нас найти?</h2>
       <img class="footer__image-map" src="#" alt="map" />
       <img class="footer__image-locator" src="#" alt="locator" />
-      <p class="footer-street">Екатеринбург, ул.Маршала Жукова, дом 12</p>
+      <p class="footer__info">Екатеринбург, ул.Маршала Жукова, дом 12</p>
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link" href="#">
-            <img class="footer__image-facebook" src="#" alt="facebook"
+            <img class="footer__image" src="#" alt="facebook"
           /></a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="#">
-            <img class="footer__image-instagramm" src="#" alt="instagramm"
+            <img class="footer__image" src="#" alt="instagramm"
           /></a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="#">
-            <img class="footer__image-youtube" src="#" alt="youtube"
+            <img class="footer__image" src="#" alt="youtube"
           /></a>
         </li>
       </ul>
-      <div class="footer__contacts">
-        <div class="footer__contacts-social">
-          <a class="footer__contacts-link" href="#">
-            <img class="footer__image-watsap" src="#" alt="watsap" />
+      <ul class="footer__contacts-list contacts">
+        <li class="contacts__contact">
+          <a class="contacts__link" href="#">
+            <img class="contacts__image" src="#" alt="watsap" />
           </a>
-          <a class="footer__contacts-link" href="#">
-            <img class="footer__image-telegramm" src="#" alt="telegramm" />
+        </li>
+        <li class="contacts__contact">
+          <a class="contacts__link" href="#">
+            <img class="contacts__image" src="#" alt="telegramm" />
           </a>
-        </div>
-        <a class="footer__contacts-link" href="tel:88123363636"
-          >+7(812) 336 36 36</a
-        >
-      </div>
-      <div class="footer__newsletter">
-        <h3 class="footer__title-newsletter">Подписаться на рассылку</h3>
-        <form class="footer__form">
-          <!--тут что с  input -ами-->
+        </li>
+        <li class="contacts__contact">
+          <a class="contacts__link" href="tel:+78123363636"
+            >+7(812) 336 36 36</a
+          >
+        </li>
+      </ul>
+      <div class="footer__newsletter newsletter">
+        <h3 class="newsletter__title">Подписаться на рассылку</h3>
+        <form class="newsletter__form">
+          <label class="newsletter__label"></label>
           <input
-            class="footer__input input button-transparent"
+            class="newsletter__input"
             type="email"
+            name="email"
             placeholder="Электронная почта"
+            required
           />
-          <button class="footer__button button" type="submit">
-            Подписаться
-          </button>
+          <button class="newsletter__button" type="submit">Подписаться</button>
         </form>
       </div>
-      <a class="footer__link-poliсу" chref="#">Политика конфидециальности</a>
+      <a class="footer__link-policy" chref="#">Политика конфидециальности</a>
     </footer>
   </body>
 </html>
