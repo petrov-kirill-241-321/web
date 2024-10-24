@@ -18,6 +18,17 @@
   font-display: swap;
 }
 
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+  margin-bottom: 80px;
+}
+
+button {
+  border: none;
+}
+
 :root {
   --color-black: #131313;
   --color-black-alternetive: #1e1e1e;
@@ -27,7 +38,9 @@
   --color-blue-alternetive: #324eea;
   --font-family-general: "Benzin-bold", sans-serif;
   --font-family-direction: "Gilroy", sans-serif;
-  
+  font-size: 62.5%;
+  --container-width: 1340px;
+  --container-padding-x: 15px;
 }
 
 .visually-hidden {
@@ -47,8 +60,8 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16.8px;
+  font-size: 1.2rem;
+  line-height: 140%;
 }
 
 a {
@@ -59,8 +72,8 @@ a {
 
 h2 {
   font-family: var(--font-family-general);
-  font-size: 20px;
-  line-height: 22px;
+  font-size: 2rem;
+  line-height: 110%;
   text-align: center;
 }
 
@@ -77,11 +90,41 @@ button {
   font-family: var(--font-family-general);
 }
 
-.header__button-menu {
+.header__inner {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.header__link {
+  display: flex;
+  column-gap: 6px;
+}
+
+.header__socials {
+  display: flex;
+  column-gap: 14px;
+  margin-inline: 40px 10px;
+}
+
+.header__button {
   background-color: var(--color-blue-alternetive);
   width: 32px;
-  aspect-ratio: 1;
+  height: 32px;
   border-radius: 50%;
+  position: relative;
+}
+
+.header__button::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  top: 50%;
+  left: 30%;
+  height: 1px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 -3px, 0 3px;
+  color: var(--color-white);
 }
 
 .banner__container-stars {
@@ -100,11 +143,18 @@ button {
   color: var(--color-black-alternetive);
 }
 
+.banner__list {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-evenly;
+}
+
 .banner__link {
   color: var(--color-white);
   background-color: var(--color-blue);
   padding: 10px 20px;
   border-radius: 20px;
+  line-height: 90%;
 }
 
 .banner__container-sell {
@@ -122,11 +172,77 @@ button {
   background-color: var(--color-white);
   padding: 20px;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .banner__numbers {
-  line-height: 13.2px;
   font-family: var(--font-family-general);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 110%;
+  color: var(--color-white);
+}
+
+.banner__item p {
+  font-family: var(--font-family-direction);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.banner__link-arrow--blue {
+  display: block;
+  background-color: var(--color-blue);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.banner__link-arrow--blue svg {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.banner__link-arrow--white {
+  display: block;
+  background-color: var(--color-white);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.banner__link-arrow--white svg {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.events__button {
+  padding: 13.5px 15px;
+  background-color: var(--color-blue);
+  border-radius: 100px;
+  font-family: var(--font-family-general);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--white);
+}
+
+.events__image {
+  border-radius: 50px;
+  position: relative;
+}
+
+.events__header-list {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .events__button--transparent {
@@ -140,6 +256,13 @@ button {
 
 .events__button--active {
   background-color: var(--color-blue-alternetive);
+  font-family: var(--font-family-direction);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--white);
+  padding: 10px 14px;
 }
 
 .events__text {
@@ -150,39 +273,103 @@ button {
   border-radius: 100px;
   background-color: var(--color-blue);
   padding: 13.5px 15px;
-  line-height: 14.4px;
+  line-height: 120%;
+}
+
+.events__button-data--transparent {
+  font-family: var(--font-family-direction);
+  background-color: transparent;
+  padding: 10px 15px 10px 14px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--color-white-alternetive);
+}
+
+.events__button {
+  padding: 13.5px 15px;
+  font-family: var(--font-family-general);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--white);
 }
 
 .events__button-showmore {
   padding: 16px 87.5px;
   border-radius: 31px;
   background-color: var(--color-white);
-  line-height: 14.4px;
+  line-height: 120%;
+  width: 100%;
 }
 
 .events__title {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.events__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 76px;
+  width: 20px;
+  aspect-ratio: 1;
+  background: url(../icons/star.svg);
+}
+
+.events__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 76px;
+  width: 20px;
+  aspect-ratio: 1;
+  background: url(../icons/star.svg);
 }
 
 .events__title-body {
-  font-size: 16px;
-  line-height: 19.2px;
+  font-size: 1.6rem;
+  line-height: 120%;
   margin-bottom: 20px;
+}
+
+.events__body-list {
+  margin-bottom: 30px;
+}
+
+.events__list-price {
+  display: flex;
+  column-gap: 40px;
 }
 
 .price__text {
   font-family: var(--font-family-direction);
-  font-size: 14px;
-  line-height: 16.8px;
+  font-size: 1.4rem;
+  line-height: 120%;
+}
+
+.price__image {
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color-white);
 }
 
 .discount__title {
   margin-bottom: 30px;
 }
 
+.discount__image {
+  border-radius: 31px;
+}
+
 .discount__subtitle {
-  font-size: 12px;
-  line-height: 13.2px;
+  font-size: 1.2rem;
+  line-height: 110%;
 }
 
 .discount__container {
@@ -190,8 +377,8 @@ button {
 }
 
 .discount__discription {
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 1rem;
+  line-height: 140%;
 }
 
 .discount__link {
@@ -202,6 +389,7 @@ button {
 .discount__button {
   background-color: var(--color-white);
   border-radius: 50%;
+  border: none;
 }
 
 .discount__button-blue {
@@ -213,20 +401,80 @@ button {
   margin-bottom: 30px;
 }
 
-.reviews__button {
-  background-color: var(--color-white);
+.reviews__list {
+  display: flex;
+  column-gap: 2px;
+}
+
+.reviews__avatar {
   border-radius: 50%;
 }
 
-.reviews__button--blue {
-  background-color: var(--color-black-alternetive);
+.reviews__image {
+  border-radius: 30px;
+}
+
+.reviews__button--white {
+  position: relative;
+  background-color: var(--color-white);
   border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.reviews__button--white img {
+  position: absolute;
+  top: 24%;
+  left: 33%;
+}
+
+.reviews__button--blue {
+  position: relative;
+  background-color: var(--color-blue-alternetive);
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.reviews__button--blue img {
+  position: absolute;
+  top: 22%;
+  left: 41%;
+}
+
+.questions__title {
+  margin-bottom: 30px;
+}
+
+.questions__item {
+  margin-bottom: 20px;
 }
 
 .questions__link {
   background-color: var(--color-blue);
   border-radius: 55px;
-  line-height: 14.4px;
+  line-height: 120%;
+  font-family: var(--font-family-general);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--white);
+  padding: 16px 87.5px;
+}
+
+.registration__title {
+  margin-bottom: 40px;
+}
+
+.registration__image {
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
+.registration__form {
+  margin-bottom: 10px;
 }
 
 .registration__input--transparent {
@@ -234,8 +482,9 @@ button {
   background-color: transparent;
   border-radius: 40px;
   color: var(--color-white);
-  font-size: 12px;
-  line-height: 16.8px;
+  font-size: 1.2rem;
+  line-height: 140%;
+  margin-bottom: 10px;
 }
 
 .registration__select {
@@ -244,24 +493,41 @@ button {
   border-radius: 40px;
   color: var(--color-white);
   font-family: var(--font-family-direction);
-  font-size: 12px;
-  line-height: 16.8px;
+  font-size: 1.2rem;
+  line-height: 140%;
+  margin-bottom: 10px;
 }
 
 .registration__button {
   background-color: var(--color-blue);
   border-radius: 55px;
+  font-family: var(--font-family-general);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 90%;
+  color: var(--white);
+  padding: 10px 101px;
+  margin-bottom: 10px;
 }
 
 .registration__policy {
   font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.footer__title {
+  margin-bottom: 30px;
 }
 
 .footer__link {
   background-color: var(--color-blue);
   border-radius: 50%;
+}
+
+.footer__image-map {
+  margin-bottom: 20px;
+  border-radius: 30px;
 }
 
 .newsletter {
@@ -271,21 +537,27 @@ button {
 
 .newsletter__title {
   color: var(--color-blue);
-  font-size: 16px;
-  line-height: 19.2px;
+  font-size: 1.6rem;
+  line-height: 120%;
 }
 
 .newsletter__input {
   background-color: transparent;
   border-radius: 100px;
   border: 1px solid var(--color-black-alternetive);
-  font-size: 14px;
-  line-height: 16.24px;
+  font-size: 1.4rem;
+  line-height: 120%;
 }
 
 .newsletter__button {
   background-color: var(--color-blue);
   border-radius: 100px;
+  font-family: var(--font-family-general);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--white);
+  padding: 10px 70.5px;
 }
 
 details > summary {
@@ -293,9 +565,9 @@ details > summary {
   background-color: var(--color-white);
   cursor: pointer;
   list-style: none;
-  line-height: 13.2px;
+  line-height: 110%;
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 details[open] > summary {
@@ -307,16 +579,16 @@ details p {
 }
 
 .registration__button {
-  line-height: 10.8px;
+  line-height: 90%;
 }
 
 .newsletter__title {
-  line-height: 19.2px;
+  line-height: 120%;
   color: var(--color-blue);
 }
 
 .newsletter__button {
-  line-height: 14.4px;
+  line-height: 120%;
 }
 
 .footer__link-poliсу {
