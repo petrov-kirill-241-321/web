@@ -70,6 +70,14 @@ a {
   color: var(--color-white);
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
 h2 {
   font-family: var(--font-family-general);
   font-size: 2rem;
@@ -233,9 +241,26 @@ button {
   color: var(--white);
 }
 
+.events__container {
+  position: relative;
+}
+
 .events__image {
   border-radius: 50px;
-  position: relative;
+}
+
+.events__icon {
+  display: flex;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .events__header-list {
@@ -285,6 +310,7 @@ button {
   font-size: 14px;
   line-height: 140%;
   color: var(--color-white-alternetive);
+  margin-right: 10px;
 }
 
 .events__button {
@@ -365,15 +391,13 @@ button {
 
 .discount__image {
   border-radius: 31px;
+  margin-bottom: 80px;
 }
 
 .discount__subtitle {
   font-size: 1.2rem;
   line-height: 110%;
-}
-
-.discount__container {
-  background-color: var(--color-blue);
+  margin-bottom: 10px;
 }
 
 .discount__discription {
@@ -382,8 +406,13 @@ button {
 }
 
 .discount__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-white);
   border-radius: 50%;
+  width: 30px;
+  aspect-ratio: 1;
 }
 
 .discount__button {
@@ -395,6 +424,55 @@ button {
 .discount__button-blue {
   background-color: var(--color-black-alternetive);
   border-radius: 50%;
+}
+
+.discounts__card {
+  position: relative;
+}
+
+.discount__container {
+  position: absolute;
+  display: flex;
+  background-color: var(--color-blue);
+  bottom: -48px;
+  left: 0;
+  border-radius: 0 53px 31px 31px;
+  padding: 10px 15px 20px 20px;
+  align-items: end;
+  justify-content: end;
+}
+
+.discount__container-body {
+  width: 212px;
+  margin-right: 12px;
+}
+
+.discount__buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.discount__button--white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.discount__button--blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blue-alternetive);
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
 }
 
 .reviews__title {
@@ -412,10 +490,19 @@ button {
 
 .reviews__image {
   border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.reviews__buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .reviews__button--white {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-white);
   border-radius: 50%;
   border: none;
@@ -423,25 +510,15 @@ button {
   height: 30px;
 }
 
-.reviews__button--white img {
-  position: absolute;
-  top: 24%;
-  left: 33%;
-}
-
 .reviews__button--blue {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-blue-alternetive);
   border-radius: 50%;
   border: none;
   width: 30px;
   height: 30px;
-}
-
-.reviews__button--blue img {
-  position: absolute;
-  top: 22%;
-  left: 41%;
 }
 
 .questions__title {
@@ -462,6 +539,28 @@ button {
   line-height: 120%;
   color: var(--white);
   padding: 16px 87.5px;
+}
+
+details > summary {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  cursor: pointer;
+  list-style: none;
+  line-height: 110%;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+
+details[open] > summary {
+  color: var(--color-black);
+}
+
+details p {
+  color: var(--color-white);
+}
+
+.registration__button {
+  line-height: 90%;
 }
 
 .registration__title {
@@ -558,28 +657,6 @@ button {
   line-height: 120%;
   color: var(--white);
   padding: 10px 70.5px;
-}
-
-details > summary {
-  color: var(--color-blue);
-  background-color: var(--color-white);
-  cursor: pointer;
-  list-style: none;
-  line-height: 110%;
-  border-radius: 30px;
-  font-size: 1.2rem;
-}
-
-details[open] > summary {
-  color: var(--color-black);
-}
-
-details p {
-  color: var(--color-white);
-}
-
-.registration__button {
-  line-height: 90%;
 }
 
 .newsletter__title {

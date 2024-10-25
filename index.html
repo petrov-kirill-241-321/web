@@ -124,12 +124,14 @@
           </ul>
           <ul class="events__body-list">
             <li class="events__body-item">
-              <img
-                class="events__image"
-                src="./images/events.jpg"
-                alt="картинка космоса"
-              />
-              <span>+7</span>
+              <div class="events__container">
+                <img
+                  class="events__image"
+                  src="./images/events.jpg"
+                  alt="картинка космоса"
+                />
+                <span class="events__icon">+7</span>
+              </div>
               <p class="events__text">полнокупольная программа</p>
               <h3 class="events__title-body">прогулка по звездному небу</h3>
               <p class="events__discription">
@@ -182,20 +184,33 @@
           <h2 class="discount__title">Акции и скидки</h2>
           <ul class="discount__list">
             <li class="discounts__item">
-              <div class="discounts__background-image">
+              <div class="discounts__card">
                 <img
                   class="discount__image"
                   src="./images/discount1.jpg"
                   alt="grandparents"
                 />
                 <div class="discount__container">
-                  <h3 class="discount__subtitle">Скидка для пенсионеров</h3>
-                  <p class="discount__discription">
-                    Все пенсионеры получат 20% скидку на билет при посещении
-                    планетария
-                  </p>
+                  <div class="discount__container-body">
+                    <h3 class="discount__subtitle">Скидка для пенсионеров</h3>
+                    <p class="discount__discription">
+                      Все пенсионеры получат 20% скидку на билет при посещении
+                      планетария
+                    </p>
+                  </div>
                   <a class="discount__link" href="#">
-                    <img class="discount__icon" src="#" alt="strelka" />
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.40552L11 11.4055M11 11.4055L1 11.4055M11 11.4055L11 0.594706"
+                        stroke="black"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -204,13 +219,21 @@
             <li class="discount__item"></li>
           </ul>
           <div class="discount__buttons">
-            <button class="discount__button">
+            <button class="discount__button discount__button--white">
               <span class="visually-hidden"> back </span>
-              <img class="discount__image" src="#" alt="left" />
+              <img
+                class="discount__back"
+                src="./icons/reviews-back.svg"
+                alt="left"
+              />
             </button>
-            <button class="discount__button discount__button-blue">
+            <button class="discount__button discount__button--blue">
               <span class="visually-hidden"> forward </span>
-              <img class="discount__image" src="#" alt="right" />
+              <img
+                class="discount__forward"
+                src="./icons/reviews-forward.svg"
+                alt="right"
+              />
             </button>
           </div>
         </div>
