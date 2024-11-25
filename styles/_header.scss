@@ -1,0 +1,76 @@
+.header {
+  @include tablet-above {
+    margin-inline: 80px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    display: flex;
+    column-gap: 6px;
+
+    &-number {
+      font-family: var(--font-family-direction);
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: var(--color-white);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    column-gap: 14px;
+    margin-inline: 40px 10px;
+    align-items: center;
+  }
+
+  &__button {
+    background-color: var(--color-blue-alternetive);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      top: 50%;
+      left: 30%;
+      height: 1px;
+      background-color: var(--color-white);
+      border-radius: 10px;
+      box-shadow: 0 -3px, 0 3px;
+      color: var(--color-white);
+    }
+
+    &-buy {
+      font-family: var(--font-family-direction);
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      color: var(--color-black);
+      border-radius: 100px;
+      padding: 10px 30px;
+      width: 157px;
+      height: 42px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    font-family: var(--font-family-direction);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--color-white);
+  }
+}

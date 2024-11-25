@@ -1,0 +1,126 @@
+@import "_reset.scss", "_media.scss", "_header.scss", "_banner.scss",
+  "_utils.scss", "_events.scss", "_price.scss", "_discount.scss",
+  "_reviews.scss", "_questions.scss", "_registration.scss", "_footer.scss",
+  "_contacts.scss", "_newsletter.scss";
+@font-face {
+  font-family: "Benzin-bold";
+  src: local("Benzin-bold"),
+    url("../fonts/benzin-bold_new.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+/* @font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy-ExtraBold"),
+      url("../fonts/Gilroy-ExtraBold.otf") format("otf");
+    font-style: normal;
+    font-display: swap;
+  } */
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"), url("../fonts/Gilroy-Light.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+
+  @include tablet {
+    max-width: 740px;
+  }
+}
+
+button {
+  border: none;
+}
+
+:root {
+  --color-black: #131313;
+  --color-black-alternetive: #1e1e1e;
+  --color-white: #ffffff;
+  --color-white-alternetive: rgba(255, 255, 255, 0.3);
+  --color-blue: #3805f2;
+  --color-blue-alternetive: #324eea;
+  --font-family-general: "Benzin-bold", sans-serif;
+  --font-family-direction: "Gilroy", sans-serif;
+  font-size: 62.5%;
+  --container-width: 1340px;
+  --container-padding-x: 15px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 140%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+h2 {
+  font-family: var(--font-family-general);
+  font-size: 2rem;
+  line-height: 110%;
+  text-align: center;
+}
+
+h3 {
+  font-family: var(--font-family-general);
+}
+
+p {
+  font-family: var(--font-family-direction);
+}
+
+button {
+  font-family: var(--font-family-general);
+}
+
+details > summary {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  cursor: pointer;
+  list-style: none;
+  line-height: 110%;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 16px 26px 16px 20px;
+}
+
+details[open] > summary {
+  color: var(--color-black);
+  --indicatorVerticalRotate: 0deg;
+}
+
+details p {
+  color: var(--color-white);
+}

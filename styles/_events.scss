@@ -1,0 +1,307 @@
+.events {
+  margin-bottom: 80px;
+
+  @include tablet-above {
+    margin-inline: 80px;
+    margin-bottom: 125px;
+  }
+
+  @include desktop-above {
+    margin-bottom: 150px;
+  }
+
+  @include desktop-big-above {
+    margin-inline: auto;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    @include mobile-above {
+      justify-content: start;
+    }
+  }
+
+  &__image {
+    border-radius: 50px;
+    @include mobile-above {
+      width: 313px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35px;
+    margin-bottom: -10px;
+  }
+
+  &__header-list {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    @include mobile-s-above {
+      text-align: center;
+    }
+
+    @include mobile-above {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    border-radius: 100px;
+    background-color: var(--color-blue);
+    padding: 13.5px 15px;
+    line-height: 120%;
+  }
+
+  &__button {
+    padding: 13.5px 15px;
+    font-family: var(--font-family-general);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: var(--white);
+    border-radius: 100px;
+    padding: 11px 14px;
+    background-color: var(--color-blue);
+
+    &--transparent {
+      border: 1px solid var(--color-white-alternetive);
+      background-color: transparent;
+      border-radius: 20px;
+      color: var(--color-white);
+      padding: 10px 14px;
+      font-family: var(--font-family-direction);
+      @include mobile-above {
+        padding: 10px 40px;
+      }
+    }
+
+    &--active {
+      background-color: var(--color-blue-alternetive);
+      font-family: var(--font-family-direction);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      text-align: center;
+      color: var(--white);
+      padding: 10px 14px;
+      border-radius: 20px;
+      @include mobile-above {
+        padding: 10px 40px;
+      }
+    }
+
+    &-data--transparent {
+      font-family: var(--font-family-direction);
+      background-color: transparent;
+      padding: 10px 15px 10px 14px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      color: var(--color-white-alternetive);
+      margin-right: 10px;
+    }
+
+    &-showmore {
+      padding: 16px 87.5px;
+      border-radius: 31px;
+      background-color: var(--color-white);
+      line-height: 120%;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -30px;
+      width: 20px;
+      aspect-ratio: 1;
+      background: url(../icons/star.svg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -30px;
+      width: 20px;
+      aspect-ratio: 1;
+      background: url(../icons/star.svg);
+    }
+    @include mobile-above {
+      font-size: 26px;
+      line-height: 100%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -50px;
+        width: 40px;
+        aspect-ratio: 1;
+        background: url(../icons/star-medium.svg);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        right: -50px;
+        width: 40px;
+        aspect-ratio: 1;
+        background: url(../icons/star-medium.svg);
+      }
+    }
+
+    @include desktop-above {
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 95%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100px;
+        width: 70px;
+        aspect-ratio: 1;
+        background: url(../icons/big-star.svg);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -100px;
+        width: 70px;
+        aspect-ratio: 1;
+        background: url(../icons/big-star.svg);
+      }
+    }
+
+    &-body {
+      font-family: var(--font-family-general);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 120%;
+      margin-bottom: 20px;
+
+      @include mobile-s-above {
+        text-align: center;
+      }
+
+      @include mobile-above {
+        text-align: start;
+      }
+    }
+    &__body-list {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list-price {
+    display: flex;
+    column-gap: 40px;
+    justify-content: start;
+    margin-bottom: 10px;
+    @include mobile-s-above {
+      justify-content: center;
+    }
+  }
+  &__container {
+    margin-bottom: 20px;
+  }
+
+  &__discription {
+    font-family: var(--font-family-direction);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 20px;
+
+    @include mobile-s-above {
+      text-align: center;
+    }
+
+    @include mobile-above {
+      text-align: start;
+    }
+
+    @include tablet-above {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 140%;
+    }
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+
+    @include mobile-s-above {
+      justify-content: center;
+    }
+  }
+
+  &__grid-flex {
+    @include mobile-above {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__title-text {
+    display: flex;
+    flex-direction: column;
+    @include mobile-s-above {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    @include mobile-above {
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__prices {
+    display: flex;
+    flex-direction: column;
+  }
+  &__body-item {
+    @include desktop-above {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 42px;
+    }
+  }
+}

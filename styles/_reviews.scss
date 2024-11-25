@@ -1,0 +1,153 @@
+.reviews {
+  margin-bottom: 80px;
+
+  @include tablet-above {
+    margin-inline: 80px;
+    margin-bottom: 125px;
+  }
+
+  @include desktop-above {
+    margin-bottom: 150px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include mobile-above {
+      margin-inline: auto;
+      font-size: 26px;
+      line-height: 100%;
+    }
+
+    @include desktop-above {
+      font-size: 56px;
+      line-height: 95%;
+    }
+  }
+
+  &__list-buttons {
+    display: flex;
+    column-gap: 2px;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+
+    &--radius {
+      border-radius: 30px;
+    }
+    @include mobile-above {
+      max-width: 290px;
+      margin-inline: 0;
+    }
+
+    @include mobile {
+      margin-inline: auto;
+      width: 290px;
+    }
+
+    @include tablet-above {
+      width: 240px;
+    }
+
+    @include desktop-big-above {
+      width: 312px;
+    }
+  }
+
+  &__title-buttons {
+    @include mobile-above {
+      display: flex;
+      justify-content: space-between;
+      @include desktop-above {
+        align-items: center;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  &__button--white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__button--blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue-alternetive);
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__button-pagination {
+    width: 15px;
+    height: 1px;
+    background-color: var(--color-white-alternetive);
+  }
+
+  &__list-buttons {
+    padding-left: 40px;
+  }
+
+  &__container-btn {
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    @include tablet-above {
+      left: 5px;
+    }
+
+    @include desktop-above {
+      top: 9px;
+    }
+  }
+
+  &__list {
+    @include mobile-above {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+    }
+
+    @include tablet-above {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+    }
+
+    @include desktop-big-above {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 10px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

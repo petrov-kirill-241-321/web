@@ -1,0 +1,84 @@
+.newsletter {
+  background-color: var(--color-white);
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  @include mobile-above {
+    padding: 30px;
+    min-width: 740px;
+  }
+  @include desktop-above {
+    display: flex;
+    border-radius: 100px;
+  }
+
+  &__title {
+    color: var(--color-blue);
+    font-size: 1.6rem;
+    line-height: 120%;
+    margin-bottom: 20px;
+    @include mobile-above {
+      font-size: 20px;
+      line-height: 140%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    width: 100%;
+    @include mobile-above {
+      flex-direction: row;
+    }
+  }
+
+  &__input {
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid var(--color-black-alternetive);
+    font-size: 1.4rem;
+    line-height: 120%;
+    padding-block: 10px;
+    text-align: center;
+    width: 100%;
+    @include mobile-above {
+      font-size: 14px;
+      padding: 11px 27px;
+      width: 100%;
+    }
+    @include desktop-above {
+      width: 312px;
+      height: 38px;
+    }
+  }
+
+  &__button {
+    background-color: var(--color-blue);
+    border-radius: 100px;
+    font-family: var(--font-family-general);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: var(--white);
+    padding-block: 10px;
+    width: 100%;
+    @include mobile-above {
+      font-size: 12px;
+      line-height: 90%;
+      padding: 10px 45px;
+      min-width: 199px;
+      max-width: 235px;
+      margin-left: 30px;
+    }
+    @include desktop-above {
+      font-size: 16px;
+      line-height: 100%;
+      padding: 10px 45px;
+      width: 235px;
+      height: 36px;
+    }
+  }
+}

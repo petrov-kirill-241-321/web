@@ -1,0 +1,175 @@
+.registration {
+  margin-bottom: 80px;
+
+  @include tablet-above {
+    margin-bottom: 125px;
+    margin-inline: 80px;
+  }
+
+  @include desktop-above {
+    margin-bottom: 150px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      align-items: center;
+    }
+
+    @include desktop-above {
+      flex-direction: row-reverse;
+      column-gap: 20px;
+      align-items: center;
+    }
+    @include desktop-above {
+      column-gap: 50px;
+    }
+  }
+
+  &__button {
+    line-height: 90%;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    @include mobile-above {
+      font-size: 26px;
+      line-height: 100%;
+    }
+    @include desktop-above {
+      font-size: 56px;
+      line-height: 95%;
+    }
+  }
+
+  &__image {
+    margin-bottom: 30px;
+    border-radius: 30px;
+    max-width: 100%;
+    @include mobile {
+      max-width: 290px;
+    }
+    @include desktop-above {
+      min-width: 550px;
+      max-width: 740px;
+    }
+  }
+
+  &__input--transparent {
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    border-radius: 40px;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    line-height: 140%;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-block: 10px;
+    padding-left: 20px;
+    font-family: var(--font-family-direction);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--color-white);
+    @include mobile-above {
+      font-size: 14px;
+      line-height: 140%;
+      padding-block: 20px;
+      margin-bottom: 20px;
+    }
+
+    @include desktop-above {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__select {
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    border-radius: 40px;
+    color: var(--color-white);
+    font-family: var(--font-family-direction);
+    font-size: 1.2rem;
+    line-height: 140%;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-block: 10px;
+    padding-left: 20px;
+    font-family: var(--font-family-direction);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--color-white);
+    @include mobile-above {
+      font-size: 14px;
+      line-height: 140%;
+      padding-block: 20px;
+      margin-bottom: 20px;
+    }
+    @include desktop-above {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__button {
+    background-color: var(--color-blue);
+    border-radius: 55px;
+    font-family: var(--font-family-general);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 90%;
+    color: var(--white);
+    padding-block: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    @include mobile-above {
+      font-size: 12px;
+      line-height: 90%;
+      padding-block: 20px;
+    }
+
+    @include tablet-above {
+      font-size: 16px;
+      line-height: 100%;
+    }
+  }
+
+  &__policy {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 120%;
+  }
+
+  &__discription {
+    margin-bottom: 30px;
+    @include mobile {
+      text-align: center;
+    }
+
+    @include mobile-above {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    @include tablet-above {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__forms {
+    width: 100%;
+    @include desktop-above {
+      min-width: 450px;
+      max-width: 540px;
+    }
+  }
+}

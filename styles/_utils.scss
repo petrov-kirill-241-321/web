@@ -1,0 +1,41 @@
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.hidden-mobile-above {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-desktop-above {
+  @include desktop {
+    display: none !important;
+  }
+}
+
+.visible-desktop-big {
+  @include desktop-big {
+    display: none !important;
+  }
+}
+
+.visible-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}

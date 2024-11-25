@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  @include mobile-above {
+    margin-bottom: 0;
+  }
+
+  &__link-number {
+    display: block;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 140%;
+    font-family: var(--font-family-direction);
+    @include desktop-above {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}

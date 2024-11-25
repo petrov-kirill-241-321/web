@@ -1,0 +1,14 @@
+.price {
+  &__text {
+    font-family: var(--font-family-direction);
+    font-size: 1.4rem;
+    line-height: 120%;
+  }
+
+  &__image {
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--color-white);
+  }
+}
