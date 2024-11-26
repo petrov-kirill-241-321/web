@@ -1,0 +1,223 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-areas:
+      "elem-1 elem-1 elem-2 elem-2"
+      "elem-3 elem-3 elem-4 elem-4"
+      "elem-3 elem-3 elem-5 elem-6"
+      "elem-7 elem-8 elem-9 elem-9";
+  }
+
+  &__elem {
+    &-1 {
+      grid-area: elem-1;
+      color: var(--color-black);
+      width: 100px;
+      height: 30px;
+      border-right: solid 5px black;
+      border-bottom: solid 5px black;
+    }
+    &-2 {
+      grid-area: elem-2;
+      color: var(--color-black);
+      width: 100px;
+      height: 30px;
+      border-bottom: solid 5px black;
+    }
+    &-3 {
+      grid-area: elem-3;
+      color: var(--color-black);
+      height: 160px;
+      border-right: solid 5px black;
+      border-bottom: solid 5px black;
+    }
+    &-4 {
+      grid-area: elem-4;
+      color: var(--color-black);
+      border-bottom: solid 5px black;
+    }
+    &-5 {
+      grid-area: elem-5;
+      color: var(--color-black);
+      border-bottom: solid 5px black;
+      border-right: solid 5px black;
+    }
+    &-6 {
+      grid-area: elem-6;
+      color: var(--color-black);
+      border-bottom: solid 5px black;
+    }
+    &-7 {
+      grid-area: elem-7;
+      color: var(--color-white);
+      width: 50px;
+    }
+    &-8 {
+      grid-area: elem-8;
+      color: var(--color-black);
+      width: 50px;
+      border-right: solid 5px black;
+    }
+    &-9 {
+      grid-area: elem-9;
+      color: var(--color-black);
+    }
+  }
+}
+
+.white {
+  background-color: var(--color-white);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: var(--color-black);
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.grafics {
+  background-color: gray;
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+
+  &__header {
+    background-color: orange;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 30px;
+    color: var(--color-black);
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    // grid-template-areas:
+    //   "elem-1 elem-1 elem-1"
+    //   "elem-2 elem-3 elem-4"
+    //   "elem-5 elem-6 .";
+  }
+
+  &__elem {
+    &-1 {
+      grid-column: span 6;
+      grid-row: span 2;
+      border: solid 1px black;
+    }
+    &-2 {
+      grid-column: span 2;
+      grid-row: span 1;
+      border: solid 1px black;
+    }
+    &-3 {
+      grid-column: span 2;
+      grid-row: span 1;
+      border: solid 1px black;
+    }
+    &-4 {
+      grid-column: span 2;
+      grid-row: span 1;
+      border: solid 1px black;
+    }
+    &-5 {
+      grid-column: span 3;
+      grid-row: span 1;
+      border: solid 1px black;
+    }
+    &-6 {
+      grid-column: span 3;
+      grid-row: span 1;
+      border: solid 1px black;
+    }
+  }
+}
+
+.galery {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  &__elem {
+    &-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+      background: url(../images/grid/galery/ezhik.jpg) center;
+    }
+    &-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: url(../images/grid/galery/kot.jpg) center;
+    }
+    &-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: url(../images/grid/galery/medved.jpg) center;
+    }
+    &-4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: url(../images/grid/galery/tiger.jpg) center;
+    }
+    &-5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: url(../images/grid/galery/zebr.jpg) center;
+    }
+  }
+
+  &__link {
+    color: pink;
+    font-size: 20px;
+  }
+}

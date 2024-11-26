@@ -1905,6 +1905,206 @@ body {
   }
 }
 
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.grid__title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.grid__inner {
+  display: grid;
+  grid-template-areas: "elem-1 elem-1 elem-2 elem-2" "elem-3 elem-3 elem-4 elem-4" "elem-3 elem-3 elem-5 elem-6" "elem-7 elem-8 elem-9 elem-9";
+}
+.grid__elem-1 {
+  grid-area: elem-1;
+  color: var(--color-black);
+  width: 100px;
+  height: 30px;
+  border-right: solid 5px black;
+  border-bottom: solid 5px black;
+}
+.grid__elem-2 {
+  grid-area: elem-2;
+  color: var(--color-black);
+  width: 100px;
+  height: 30px;
+  border-bottom: solid 5px black;
+}
+.grid__elem-3 {
+  grid-area: elem-3;
+  color: var(--color-black);
+  height: 160px;
+  border-right: solid 5px black;
+  border-bottom: solid 5px black;
+}
+.grid__elem-4 {
+  grid-area: elem-4;
+  color: var(--color-black);
+  border-bottom: solid 5px black;
+}
+.grid__elem-5 {
+  grid-area: elem-5;
+  color: var(--color-black);
+  border-bottom: solid 5px black;
+  border-right: solid 5px black;
+}
+.grid__elem-6 {
+  grid-area: elem-6;
+  color: var(--color-black);
+  border-bottom: solid 5px black;
+}
+.grid__elem-7 {
+  grid-area: elem-7;
+  color: var(--color-white);
+  width: 50px;
+}
+.grid__elem-8 {
+  grid-area: elem-8;
+  color: var(--color-black);
+  width: 50px;
+  border-right: solid 5px black;
+}
+.grid__elem-9 {
+  grid-area: elem-9;
+  color: var(--color-black);
+}
+
+.white {
+  background-color: var(--color-white);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: var(--color-black);
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.grafics {
+  background-color: gray;
+}
+.grafics__inner {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.grafics__header {
+  background-color: orange;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grafics__title {
+  margin-bottom: 30px;
+}
+.grafics__link {
+  display: block;
+  font-size: 30px;
+  color: var(--color-black);
+}
+.grafics__item {
+  margin-bottom: 30px;
+}
+.grafics__grid {
+  display: grid;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+}
+.grafics__elem-1 {
+  grid-column: span 6;
+  grid-row: span 2;
+  border: solid 1px black;
+}
+.grafics__elem-2 {
+  grid-column: span 2;
+  grid-row: span 1;
+  border: solid 1px black;
+}
+.grafics__elem-3 {
+  grid-column: span 2;
+  grid-row: span 1;
+  border: solid 1px black;
+}
+.grafics__elem-4 {
+  grid-column: span 2;
+  grid-row: span 1;
+  border: solid 1px black;
+}
+.grafics__elem-5 {
+  grid-column: span 3;
+  grid-row: span 1;
+  border: solid 1px black;
+}
+.grafics__elem-6 {
+  grid-column: span 3;
+  grid-row: span 1;
+  border: solid 1px black;
+}
+
+.galery__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+}
+.galery__elem-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background: url(../images/grid/galery/ezhik.jpg) center;
+}
+.galery__elem-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: url(../images/grid/galery/kot.jpg) center;
+}
+.galery__elem-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: url(../images/grid/galery/medved.jpg) center;
+}
+.galery__elem-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: url(../images/grid/galery/tiger.jpg) center;
+}
+.galery__elem-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: url(../images/grid/galery/zebr.jpg) center;
+}
+.galery__link {
+  color: pink;
+  font-size: 20px;
+}
+
 @font-face {
   font-family: "Benzin-bold";
   src: local("Benzin-bold"), url("../fonts/benzin-bold_new.woff2") format("woff2");
