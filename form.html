@@ -61,102 +61,100 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <section class="grid orange">
-        <h1 class="grid__title">Grid table</h1>
-        <div class="grid__inner container">
-          <div class="grid__elem-1 white">1</div>
-          <div class="grid__elem-2 yellow">2</div>
-          <div class="grid__elem-3 red">3</div>
-          <div class="grid__elem-4 yellow">4</div>
-          <div class="grid__elem-5 white">5</div>
-          <div class="grid__elem-6 white">6</div>
-          <div class="grid__elem-7 black">7</div>
-          <div class="grid__elem-8 white">8</div>
-          <div class="grid__elem-9 white">9</div>
-        </div>
-      </section>
-      <section class="grafics">
-        <div class="grafics__inner">
-          <div class="grafics__header">
-            <h2 class="grafics__title">Grid grafics</h2>
-            <nav class="grafics__navigation">
-              <ul class="grafics__list">
-                <li class="grafics__item">
-                  <a href="#" class="grafics__link"> ссылка 1 </a>
-                </li>
-                <li class="grafics__item">
-                  <a href="#" class="grafics__link"> ссылка 2 </a>
-                </li>
-                <li class="grafics__item">
-                  <a href="#" class="grafics__link"> ссылка 3 </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="grafics__grid">
-            <div class="grafics__elem-1">
-              <img
-                src="./images/grid/1.png"
-                alt="grafic1"
-                class="grafics__image"
-              />
+    <main class="content">
+      <section class="form container">
+        <div class="form__inner container">
+          <form class="form__forma" action="//httpbin.org/post" method="post">
+            <div class="form__personal">
+              <label class="form__label" for="name">
+                <span>*</span> имя
+                <input
+                  class="form__input form__input-name"
+                  id="name"
+                  type="text"
+                  placeholder="имя"
+                  required
+                />
+              </label>
+
+              <label class="form__label" for="birthday">
+                дата рождения
+                <input
+                  class="form__input form__input-data-birthday"
+                  id="birthday"
+                  type="date"
+                  placeholder="дата рождения"
+                />
+              </label>
+
+              <label class="form__label" for="gender">
+                ваш пол
+                <select
+                  name="gender"
+                  id="gender"
+                  class="form__select form__select-gender"
+                >
+                  <option value="" disabled selected>пол</option>
+                  <option value="Мужской">Мужской</option>
+                  <option value="Женский">Женский</option>
+                </select>
+              </label>
+
+              <label class="form__label" for="password">
+                <span>*</span> пароль
+                <input
+                  class="form__input form__input-password"
+                  id="password"
+                  type="password"
+                  placeholder="пароль"
+                  required
+                />
+              </label>
             </div>
-            <div class="grafics__elem-2">
-              <img
-                src="./images/grid/2.png"
-                alt="grafic2"
-                class="grafics__image"
-              />
+            <div class="form__contacts">
+              <label class="form__label" for="email">
+                <span>*</span> email
+                <input
+                  class="form__input form__input-email"
+                  id="email"
+                  type="email"
+                  placeholder="email"
+                  required
+                />
+              </label>
+              <label class="form__label" for="number">
+                <span>*</span> номер телефона
+                <input
+                  class="form__input form__input-tel"
+                  type="tel"
+                  id="number"
+                  placeholder="номер телефона"
+                  required
+                />
+              </label>
+              <label class="form__label" for="day">
+                <span>*</span> удобный интервал для связи
+                <select
+                  name="day"
+                  id="day"
+                  class="form__select form__select-gender"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Удобный интервал для связи
+                  </option>
+                  <option value="утро">Утро</option>
+                  <option value="день">день</option>
+                  <option value="вечер">вечер</option>
+                  <option value="ночь">ночь</option>
+                </select>
+              </label>
             </div>
-            <div class="grafics__elem-3">
-              <img
-                src="./images/grid/3.png"
-                alt="grafic3"
-                class="grafics__image"
-              />
+            <div class="form__buttons">
+              <button class="form__button" type="reset">Сбросить выбор</button>
+              <button class="form__button" type="submit">Отправить</button>
             </div>
-            <div class="grafics__elem-4">
-              <img
-                src="./images/grid/4.png"
-                alt="grafic4"
-                class="grafics__image"
-              />
-            </div>
-            <div class="grafics__elem-5">
-              <img
-                src="./images/grid/5.png"
-                alt="grafic5"
-                class="grafics__image"
-              />
-            </div>
-            <div class="grafics__elem-6">
-              <img
-                src="./images/grid/6.png"
-                alt="grafic6"
-                class="grafics__image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="galery">
-        <div class="galery__inner container">
-          <div class="galery__elem-1">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-2">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-3">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-4">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
-          <div class="galery__elem-5">
-            <a href="#" class="galery__link">ссылка</a>
-          </div>
+          </form>
         </div>
       </section>
     </main>
@@ -253,6 +251,7 @@
             <a class="footer__link-policy-link" href="#"
               >Политика конфидециальности</a
             >
+            <a href="./grid.html" class="footer__gtid">GRID</a>
           </div>
         </div>
       </div>

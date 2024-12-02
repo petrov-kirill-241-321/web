@@ -72,6 +72,10 @@
     font-size: 12px;
     line-height: 140%;
     color: var(--color-white);
+    &::placeholder {
+      color: var(--color-white);
+    }
+
     @include mobile-above {
       font-size: 14px;
       line-height: 140%;

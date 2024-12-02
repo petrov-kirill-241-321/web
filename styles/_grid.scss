@@ -96,6 +96,7 @@
 }
 
 .grafics {
+  margin-bottom: 40px;
   background-color: gray;
   &__inner {
     display: flex;
@@ -105,8 +106,8 @@
 
   &__header {
     background-color: orange;
-    height: 100vh;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -130,41 +131,35 @@
     display: grid;
     column-gap: 20px;
     row-gap: 20px;
-    // grid-template-areas:
-    //   "elem-1 elem-1 elem-1"
-    //   "elem-2 elem-3 elem-4"
-    //   "elem-5 elem-6 .";
+    grid-template-areas:
+      "elem-1 elem-1 elem-1 elem-1 elem-1 elem-1"
+      "elem-2 elem-2 elem-3 elem-3 elem-4 elem-4"
+      "elem-5 elem-5 elem-5 elem-6 elem-6 elem-6";
   }
 
   &__elem {
     &-1 {
-      grid-column: span 6;
-      grid-row: span 2;
+      grid-area: elem-1;
       border: solid 1px black;
     }
     &-2 {
-      grid-column: span 2;
-      grid-row: span 1;
+      grid-area: elem-2;
       border: solid 1px black;
     }
     &-3 {
-      grid-column: span 2;
-      grid-row: span 1;
+      grid-area: elem-3;
       border: solid 1px black;
     }
     &-4 {
-      grid-column: span 2;
-      grid-row: span 1;
+      grid-area: elem-4;
       border: solid 1px black;
     }
     &-5 {
-      grid-column: span 3;
-      grid-row: span 1;
+      grid-area: elem-5;
       border: solid 1px black;
     }
     &-6 {
-      grid-column: span 3;
-      grid-row: span 1;
+      grid-area: elem-6;
       border: solid 1px black;
     }
   }
