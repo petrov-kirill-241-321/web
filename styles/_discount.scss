@@ -1,4 +1,5 @@
 .discount {
+  --discountRotate: 0deg;
   margin-bottom: 80px;
 
   @include tablet-above {
@@ -108,6 +109,15 @@
     border-radius: 50%;
     width: 30px;
     aspect-ratio: 1;
+    rotate: var(--discountRotate);
+    & svg {
+      &:hover {
+        --discountRotate: 45deg;
+        rotate: var(--discountRotate);
+        transition: 0.3s;
+      }
+    }
+
     @include mobile-above {
       width: 40px;
       aspect-ratio: 1;

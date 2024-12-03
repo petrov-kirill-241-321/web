@@ -1,4 +1,7 @@
 .events {
+  --eventsButtonBgColor: blue;
+  --eventsButtonColor: white;
+
   margin-bottom: 80px;
 
   @include tablet-above {
@@ -78,10 +81,10 @@
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 120%;
-    color: var(--white);
+    color: var(--eventsButtonColor);
     border-radius: 100px;
     padding: 11px 14px;
-    background-color: var(--color-blue);
+    background-color: var(--eventsButtonBgColor);
 
     &--transparent {
       border: 1px solid var(--color-white-alternetive);
@@ -92,6 +95,14 @@
       font-family: var(--font-family-direction);
       @include mobile-above {
         padding: 10px 40px;
+      }
+
+      &:hover {
+        border: 1px solid var(--color-white);
+        transition: 0.2s;
+      }
+      &:focus {
+        background-color: var(--color-blue-alternetive);
       }
     }
 
@@ -128,8 +139,20 @@
       background-color: var(--color-white);
       line-height: 120%;
       width: 100%;
+
+      &:hover {
+        color: inherit;
+        transition: 0.4s;
+      }
     }
   }
+
+  // &__input {
+  //   display: none;
+  //   &:checked + .events__button--transparent {
+  //     background-color: blue;
+  //   }
+  // }
 
   &__title {
     margin-bottom: 30px;
@@ -298,6 +321,12 @@
     flex-direction: column;
   }
   &__body-item {
+    &:hover {
+      background-color: var(--color-blue);
+      transition: 0.4s;
+      --eventsButtonBgColor: white;
+      --eventsButtonColor: black;
+    }
     @include desktop-above {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -305,3 +334,16 @@
     }
   }
 }
+
+// @keyframes border-animation {
+//   0% {
+//     border-bottom: 1px solid var(--color-white);
+//   }
+//   40% {
+//     border-left: 1px solid var(--color-white);
+//     border-right: 1px solid var(--color-white);
+//   }
+//   100% {
+//     border: 1px solid var(--color-white);
+//   }
+// }
