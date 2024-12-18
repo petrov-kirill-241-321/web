@@ -48,7 +48,7 @@
     border-radius: 30px;
     max-width: 100%;
     @include mobile {
-      max-width: 290px;
+      max-width: 100%;
     }
     @include desktop-above {
       min-width: 550px;

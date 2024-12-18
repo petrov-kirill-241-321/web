@@ -29,14 +29,36 @@
     }
   }
 
+  &__title-s {
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    @include desktop-above {
+      font-size: 2.4rem;
+      line-height: 140%;
+      margin-top: 78px;
+    }
+  }
+
   &__celestia {
     color: var(--color-blue);
   }
 
   &__title-pair--black {
+    font-size: 20px;
+    line-height: 110%;
+
+    @include mobile-above {
+      font-size: 26px;
+      line-height: 100%;
+      margin-bottom: 10px;
+    }
+
     @include desktop-above {
       font-size: 4rem;
       line-height: 95%;
+      font-weight: 400 !important;
     }
   }
 
@@ -46,13 +68,11 @@
     margin-bottom: 20px;
 
     @include mobile-above {
-      font-weight: 400;
       font-size: 3.2rem;
       line-height: 100%;
     }
 
     @include desktop-above {
-      font-weight: 400;
       font-size: 6.4rem;
       line-height: 95%;
     }
@@ -79,8 +99,14 @@
   }
 
   &-discription {
+    @include mobile-above {
+      font-size: 14px;
+      line-height: 140%;
+      font-weight: 500;
+    }
+
     @include desktop-above {
-      font-size: 22px;
+      font-size: 2.2rem;
       line-height: 120%;
     }
   }
@@ -89,8 +115,7 @@
     color: var(--color-black-alternetive);
 
     @include mobile-above {
-      font-weight: 500;
-      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 140%;
     }
   }
@@ -108,7 +133,7 @@
     border-radius: 20px;
     line-height: 90%;
     font-family: var(--font-family-general);
-    font-weight: 400;
+
     font-size: 1.2rem;
     line-height: 90%;
     color: var(--color-white);
@@ -119,7 +144,7 @@
     }
 
     @include desktop-above {
-      font-size: 20px;
+      font-size: 2rem;
       line-height: 140%;
       border-radius: 50px;
       padding: 20px;
@@ -132,18 +157,32 @@
   &__container-sell {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     background-color: var(--color-blue);
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 10px;
+    @include desktop-above {
+      padding: 40px;
+      border-radius: 55px;
+    }
   }
 
-  &__title {
+  &__title--white {
     text-align: start;
+    font-size: 20px;
+    line-height: 110%;
+    // font-weight: 400 !important;
+
+    @include mobile-above {
+      font-size: 26px;
+      line-height: 100%;
+      margin-bottom: 10px;
+    }
+
     @include desktop-above {
-      font-size: 40px;
       line-height: 95%;
+      font-size: 4rem;
     }
   }
 
@@ -155,11 +194,16 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 10px;
+    @include desktop-above {
+      border-radius: 55px;
+      padding: 40px;
+      margin-bottom: 14px;
+    }
   }
 
   &__numbers {
     font-family: var(--font-family-general);
-    font-weight: 400;
+
     font-size: 1.2rem;
     line-height: 110%;
     color: var(--color-white);
@@ -168,7 +212,7 @@
 
   &__subject {
     font-family: var(--font-family-direction);
-    font-weight: 400;
+
     font-size: 1.2rem;
     line-height: 140%;
     text-align: center;
@@ -225,10 +269,12 @@
   &__logo {
     width: 40px;
     height: 40px;
+    margin-top: 26px;
 
     @include desktop-above {
       width: 75px;
       height: 70px;
+      margin-top: 78px;
     }
   }
   &__title-card {
@@ -291,22 +337,22 @@
 
   &__numbers {
     font-family: var(--font-family-general);
-    font-weight: 400;
-    font-size: 16px;
+
+    font-size: 1.6rem;
     line-height: 120%;
     text-align: center;
     text-align: center;
     color: var(--color-black);
     text-align: center;
     @include desktop-above {
-      font-size: 24px;
+      font-size: 2.4rem;
       line-height: 120%;
     }
 
     &--white {
       color: var(--color-white);
       @include desktop-above {
-        font-size: 24px;
+        font-size: 2.4rem;
         line-height: 120%;
       }
     }
@@ -314,22 +360,20 @@
 
   &__subject {
     font-family: var(--font-family-direction);
-    font-weight: 500;
+    font-weight: 400 !important;
     font-size: 1.4rem;
     line-height: 140%;
     text-align: center;
     color: var(--color-black);
     @include desktop-above {
-      font-weight: 500;
-      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 140%;
     }
 
     &--white {
       color: var(--color-white);
       @include desktop-above {
-        font-weight: 500;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 140%;
       }
     }
@@ -339,5 +383,8 @@
     display: flex;
     column-gap: 20px;
     justify-content: space-evenly;
+    @include desktop-above {
+      margin-bottom: 77px;
+    }
   }
 }

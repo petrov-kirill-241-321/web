@@ -9,6 +9,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /* @font-face {
     font-family: "Gilroy";
     src: local("Gilroy-ExtraBold"),
@@ -21,6 +22,7 @@
   src: local("Gilroy"), url("../fonts/Gilroy-Light.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
+  font-weight: 400;
 }
 
 .container {
@@ -46,6 +48,7 @@ button {
   --color-blue-alternetive: #324eea;
   --font-family-general: "Benzin-bold", sans-serif;
   --font-family-direction: "Gilroy", sans-serif;
+
   font-size: 62.5%;
   --container-width: 1340px;
   --container-padding-x: 15px;
@@ -67,7 +70,7 @@ button {
 body {
   background-color: var(--color-black);
   color: var(--color-white);
-  font-weight: 400;
+
   font-size: 1.2rem;
   line-height: 140%;
 }
@@ -82,10 +85,12 @@ h2 {
   font-size: 2rem;
   line-height: 110%;
   text-align: center;
+  font-weight: 400 !important;
 }
 
 h3 {
   font-family: var(--font-family-general);
+  font-weight: 400 !important;
 }
 
 p {

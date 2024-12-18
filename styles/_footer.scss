@@ -51,6 +51,7 @@
     }
     &-map {
       margin-bottom: 20px;
+      min-width: 290px;
 
       @include mobile-above {
         width: 740px;
@@ -103,6 +104,8 @@
 
     &-policy {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       font-family: var(--font-family-direction);
       font-weight: 500;
@@ -129,6 +132,10 @@
   }
 
   &__newsletter-policy {
+    @include mobile {
+      width: 100%;
+    }
+
     @include desktop-above {
       display: flex;
       flex-direction: row-reverse;

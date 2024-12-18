@@ -33,6 +33,7 @@
 
   &__image {
     border-radius: 50px;
+    width: 100%;
     @include mobile-above {
       width: 313px;
     }

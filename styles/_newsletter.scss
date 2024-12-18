@@ -2,6 +2,7 @@
   background-color: var(--color-white);
   border-radius: 30px;
   padding: 20px;
+  width: 100%;
   margin-bottom: 20px;
   @include mobile-above {
     padding: 30px;
@@ -28,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     row-gap: 10px;
     width: 100%;
     @include mobile-above {
