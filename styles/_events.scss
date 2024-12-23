@@ -305,6 +305,14 @@
       justify-content: center;
       align-items: center;
     }
+
+    @include mobile-above {
+      align-items: start;
+    }
+
+    @include desktop-above {
+      align-items: center;
+    }
   }
 
   &__buttons {

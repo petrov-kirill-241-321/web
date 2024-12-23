@@ -65,7 +65,7 @@
       <section class="form container">
         <div class="form__inner container">
           <form class="form__forma" action="//httpbin.org/post" method="post">
-            <div class="form__personal">
+            <fieldset class="form__personal">
               <label class="form__label" for="name">
                 <span>*</span> имя
                 <input
@@ -83,7 +83,6 @@
                   class="form__input form__input-data-birthday"
                   id="birthday"
                   type="date"
-                  placeholder="дата рождения"
                 />
               </label>
 
@@ -110,8 +109,8 @@
                   required
                 />
               </label>
-            </div>
-            <div class="form__contacts">
+            </fieldset>
+            <fieldset class="form__contacts">
               <label class="form__label" for="email">
                 <span>*</span> email
                 <input
@@ -149,11 +148,110 @@
                   <option value="ночь">ночь</option>
                 </select>
               </label>
-            </div>
+            </fieldset>
             <div class="form__buttons">
               <button class="form__button" type="reset">Сбросить выбор</button>
               <button class="form__button" type="submit">Отправить</button>
             </div>
+          </form>
+        </div>
+        <div class="second_task__wrapper">
+          <dl>
+            <dt>Псевдоэлемент</dt>
+            <dd>
+              Селектор, который позволяет стилизовать определенную часть
+              элемента, а не сам элемент в целом.
+            </dd>
+
+            <dt>Псевдокласс</dt>
+            <dd>
+              Селектор, который применяется к элементам на основе их состояния
+              или взаимодействия с пользователем
+            </dd>
+          </dl>
+          <form class="second_task">
+            <fieldset class="pseudo-element">
+              <legend>Выберите псевдоэлементы</legend>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="before"
+                  name="pseudo-element"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="before"> ::before </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="after"
+                  name="pseudo-element"
+                  class="input_2"
+                />
+                <label for="after"> ::after </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="first-letter"
+                  name="pseudo-element"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="first-letter"> ::first-letter </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="first-line"
+                  name="pseudo-element"
+                  class="input_2"
+                />
+                <label for="first-line"> ::first-line </label>
+              </div>
+            </fieldset>
+            <fieldset class="pseudo-class">
+              <legend>Выберите псевдоклассы</legend>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="hover"
+                  name="pseudo-class"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="hover"> :hover </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="focus"
+                  name="pseudo-class"
+                  class="input_2"
+                />
+                <label for="focus"> :focus </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="active"
+                  name="pseudo-class"
+                  checked=""
+                  class="input_2"
+                />
+                <label for="active"> :active </label>
+              </div>
+              <div class="second_task__container">
+                <input
+                  type="checkbox"
+                  id="visited"
+                  name="pseudo-class"
+                  class="input_2"
+                />
+                <label for="visited"> :visited </label>
+              </div>
+            </fieldset>
           </form>
         </div>
       </section>
@@ -252,8 +350,10 @@
               >Политика конфидециальности</a
             >
             <a href="./grid.html" class="footer__gtid">GRID</a>
+            <a href="./demo.html" class="footer__gtid">DEMO</a>
           </div>
         </div>
+        <img class="footer__logo" src="./icons/logo.svg" alt="logo" />
       </div>
     </footer>
   </body>

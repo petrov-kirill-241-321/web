@@ -1,0 +1,79 @@
+.animation {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+
+  &__card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+    &:hover {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__front,
+  &__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    background-color: var(--color-blue-alternetive);
+  }
+
+  &__front {
+    z-index: 2;
+  }
+
+  &__back {
+    transform: rotateY(180deg);
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+}
+.line {
+  width: 100%;
+  max-width: 50rem;
+  margin: 8rem auto;
+  border: rgb(255, 255, 255) 0.1rem solid;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &__list {
+    display: flex;
+    animation: scroll 3s linear infinite;
+  }
+
+  &__item {
+    margin-right: 20px;
+    min-width: 10rem;
+    min-height: 10rem;
+    background-color: white;
+    border-radius: 1rem;
+
+    &:nth-child(even) {
+      background-color: var(--color-blue-alternetive);
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

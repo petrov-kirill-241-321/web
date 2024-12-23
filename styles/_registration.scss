@@ -75,6 +75,9 @@
     &::placeholder {
       color: var(--color-white);
     }
+    &:hover {
+      background-color: var(--color-blue);
+    }
 
     @include mobile-above {
       font-size: 14px;
@@ -108,6 +111,10 @@
     font-size: 12px;
     line-height: 140%;
     color: var(--color-white);
+    &:hover {
+      background-color: var(--color-blue);
+    }
+
     @include mobile-above {
       font-size: 14px;
       line-height: 140%;
@@ -133,6 +140,10 @@
     padding-block: 10px;
     width: 100%;
     margin-bottom: 10px;
+    &:focus {
+      border: solid 1px var(--color-whiteme);
+    }
+
     @include mobile-above {
       font-size: 12px;
       line-height: 90%;
@@ -142,6 +153,13 @@
     @include tablet-above {
       font-size: 16px;
       line-height: 100%;
+    }
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      box-shadow: 0 2px 8px var(--color-black);
+      transition: 0.5s;
     }
   }
 

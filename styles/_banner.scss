@@ -152,6 +152,13 @@
       height: 68px;
       text-align: center;
     }
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      box-shadow: 0 2px 8px var(--color-black);
+      transition: 0.5s;
+    }
   }
 
   &__container-sell {

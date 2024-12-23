@@ -144,4 +144,13 @@
       column-gap: 190px;
     }
   }
+
+  &__logo {
+    &:hover {
+      scale: 1.5;
+      rotate: 30deg;
+      transition: 0.3s;
+      transform: skew(10deg, 10deg);
+    }
+  }
 }
