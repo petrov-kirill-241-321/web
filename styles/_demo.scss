@@ -53,7 +53,7 @@
 
   &__list {
     display: flex;
-    animation: scroll 3s linear infinite;
+    animation: scroll 11s linear infinite;
   }
 
   &__item {
@@ -70,10 +70,10 @@
 
   @keyframes scroll {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(0);
     }
     100% {
-      transform: translateX(100%);
+      transform: translateX(-50%);
     }
   }
 }

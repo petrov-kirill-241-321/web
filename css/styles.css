@@ -760,7 +760,7 @@ body {
   font-size: 14px;
   line-height: 140%;
   color: var(--color-white-alternetive);
-  margin-right: 10px;
+  margin-right: 7px;
 }
 .events__button-showmore {
   padding: 16px 87.5px;
@@ -1380,6 +1380,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.reviews__item-button {
+  padding-block: 3px;
 }
 
 .questions {
@@ -2473,7 +2476,7 @@ dd::before {
 }
 .line__list {
   display: flex;
-  animation: scroll 3s linear infinite;
+  animation: scroll 11s linear infinite;
 }
 .line__item {
   margin-right: 20px;
@@ -2487,10 +2490,10 @@ dd::before {
 }
 @keyframes scroll {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
 }
 

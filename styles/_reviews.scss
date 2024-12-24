@@ -149,5 +149,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &-button {
+      padding-block: 3px;
+    }
   }
 }
