@@ -1383,6 +1383,7 @@ body {
 }
 .reviews__item-button {
   padding-block: 5px;
+  padding-inline: 1px;
 }
 
 .questions {
