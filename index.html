@@ -244,7 +244,7 @@
                   </ul>
                   <div class="events__select">
                     <form class="events__form">
-                      <label for="walk">
+                      <label class="events__label" for="walk">
                         <select
                           class="events__button-data events__button-data--transparent"
                           name="choice_data"
@@ -314,7 +314,7 @@
                   </ul>
                   <div class="events__select">
                     <form class="events__form">
-                      <label for="travel">
+                      <label class="events__label" for="travel">
                         <select
                           class="events__button-data events__button-data--transparent"
                           name="choice_data"
@@ -383,7 +383,7 @@
                   </ul>
                   <div class="events__select">
                     <form class="events__form">
-                      <label for="astronomia">
+                      <label class="events__label" for="astronomia">
                         <select
                           class="events__button-data events__button-data--transparent"
                           name="choice_data"
@@ -819,16 +819,18 @@
                     placeholder="Номер телефона"
                   />
                 </label>
-                <select class="registration__select" required>
-                  <option value="Дата посещения" disabled selected>
-                    Дата посещения
-                  </option>
-                  <option value="12.04">12.04</option>
-                  <option value="12.05">12.05</option>
-                </select>
-                <button class="registration__button" type="submit">
-                  Отправить
-                </button>
+                <label for="date" class="registration__label">
+                  <select class="registration__select" id="date" required>
+                    <option value="Дата посещения" disabled selected>
+                      Дата посещения
+                    </option>
+                    <option value="12.04">12.04</option>
+                    <option value="12.05">12.05</option>
+                  </select>
+                  <button class="registration__button" type="submit">
+                    Отправить
+                  </button>
+                </label>
               </form>
               <p class="registration__policy">
                 *нажимая на кнопку, вы соглашаетесь с политикой
