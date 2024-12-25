@@ -1367,6 +1367,112 @@ body {
 .reviews__container {
   position: relative;
 }
+.reviews__container--1::before {
+  position: absolute;
+  content: "#stellarium";
+  padding: 5px 10px;
+  border-radius: 20px;
+  right: 35px;
+  color: var(--color-blue);
+  bottom: 75px;
+  font-size: 1.6rem;
+  background-color: var(--color-white);
+  font-family: var(--font-family-general);
+  rotate: -15deg;
+}
+.reviews__container--1::after {
+  position: absolute;
+  content: "#планетарий";
+  padding: 5px 10px;
+  border-radius: 20px;
+  right: 18px;
+  color: var(--color-white);
+  bottom: 50px;
+  font-size: 1.4rem;
+  background-color: var(--color-blue);
+  font-family: var(--font-family-general);
+  rotate: -5deg;
+}
+@media (min-width: 768px) {
+  .reviews__container--2::before {
+    position: absolute;
+    content: "#stellarium";
+    padding: 2px 10px;
+    border-radius: 20px;
+    right: 70px;
+    color: var(--color-blue);
+    bottom: 65px;
+    font-size: 1.2rem;
+    background-color: var(--color-white);
+    font-family: var(--font-family-general);
+    rotate: -15deg;
+  }
+  .reviews__container--2::after {
+    position: absolute;
+    content: "Всем советую посетить!";
+    padding: 1px 10px;
+    border-radius: 20px;
+    left: 70px;
+    color: var(--color-white);
+    bottom: 30px;
+    font-size: 1.4rem;
+    font-family: var(--font-family-general);
+    rotate: -10deg;
+  }
+}
+@media (min-width: 1341px) {
+  .reviews__container--1::before {
+    position: absolute;
+    content: "#stellarium";
+    padding: 5px 10px;
+    border-radius: 20px;
+    right: 35px;
+    color: var(--color-blue);
+    bottom: 75px;
+    font-size: 1.6rem;
+    background-color: var(--color-white);
+    font-family: var(--font-family-general);
+    rotate: -15deg;
+  }
+  .reviews__container--1::after {
+    position: absolute;
+    content: "#планетарий";
+    padding: 5px 10px;
+    border-radius: 20px;
+    right: 18px;
+    color: var(--color-white);
+    bottom: 50px;
+    font-size: 1.4rem;
+    background-color: var(--color-blue);
+    font-family: var(--font-family-general);
+    rotate: -5deg;
+  }
+  .reviews__container--2::before {
+    position: absolute;
+    content: "#stellarium";
+    padding: 2px 10px;
+    border-radius: 20px;
+    right: 70px;
+    color: var(--color-blue);
+    bottom: 65px;
+    font-size: 1.2rem;
+    background-color: var(--color-white);
+    font-family: var(--font-family-general);
+    rotate: -15deg;
+  }
+  .reviews__container--2::after {
+    position: absolute;
+    content: "Всем советую посетить!";
+    padding: 5px 10px;
+    border-radius: 20px;
+    left: 110px;
+    color: var(--color-white);
+    bottom: 30px;
+    font-size: 1.6rem;
+    font-family: var(--font-family-general);
+    rotate: -10deg;
+  }
+}
 .reviews__container--bgc {
   background-color: var(--color-white);
   min-width: 290px;
@@ -1375,6 +1481,16 @@ body {
   padding: 30px;
   height: 100%;
 }
+@media (min-width: 1024px) {
+  .reviews__container--bgc {
+    min-width: 240px;
+  }
+}
+@media (min-width: 1341px) {
+  .reviews__container--bgc {
+    min-width: 290px;
+  }
+}
 .reviews__text {
   font-family: var(--font-family-direction);
   font-weight: 500;
@@ -1382,6 +1498,7 @@ body {
   line-height: 140%;
   max-width: 200px;
   margin-inline: auto;
+  margin-bottom: 10px;
 }
 .reviews__button-pagination {
   width: 20px;
@@ -1432,6 +1549,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .reviews__item-button {
   padding-block: 7px;
