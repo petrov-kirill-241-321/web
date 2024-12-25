@@ -759,8 +759,9 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  color: var(--color-white-alternetive);
+  color: var(--color-white);
   margin-right: 7px;
+  border-color: var(--color-white);
 }
 .events__button-showmore {
   padding: 16px 87.5px;
@@ -1383,12 +1384,12 @@ body {
   margin-inline: auto;
 }
 .reviews__button-pagination {
-  width: 15px;
+  width: 20px;
   height: 3px;
   background-color: var(--color-white-alternetive);
 }
 .reviews__list-buttons {
-  padding-left: 20px;
+  padding-left: 0;
 }
 .reviews__container-btn {
   position: absolute;
